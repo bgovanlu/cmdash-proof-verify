@@ -1,0 +1,194 @@
+{
+  "id": "02-valid-measured-at-least",
+  "title": "AT_LEAST 9/10 met with 2 unknown hosts counted against it (47 of 50)",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IkFUX0xFQVNUIiwidGhyZXNob2xkIjp7ImRlbm9taW5hdG9yIjoxMCwibnVtZXJhdG9yIjo5fX0sImNsYWltSWQiOiJjbW1jLWwyLnNpLmVkci1kZXBsb3llZCIsImNvbnRyb2xzIjpbeyJjb250cm9sSWQiOiJTSS5MMi0zLjE0LjIiLCJmcmFtZXdvcmsiOiJjbW1jLWwyIn1dLCJzdGF0ZW1lbnQiOiJBdCBsZWFzdCA5MCUgb2YgYWN0aXZlIGhvc3RzIHJ1biB0aGUgRURSIGFnZW50LiJ9LCJldmlkZW5jZSI6eyJhbGdvIjoic2hhMjU2LXNhbHRlZCIsImNvbW1pdG1lbnQiOiJmZTAzZmZiZmU4NzdkMWU5YjQ5MGNjMjAyNmRjZjQxMzExOWJhNTg3OWNjNTdlMmE5ZmFiYjA2OGRjMzE3ZGE0In0sImZyZXNoVW50aWwiOiIyMDI2LTEwLTMxVDExOjMwOjAwLjAwMFoiLCJpc3N1ZWRBdCI6IjIwMjYtMTAtMDFUMTI6MDA6MDAuMDAwWiIsImlzc3VlciI6eyJkZXBsb3ltZW50IjoiaHR0cHM6Ly9jbWRhc2guZXhhbXBsZSIsImtleUlkIjoiY21kYXNoLXByb29mLTZiMWU3OWE3MGU3Nzc2NzYiLCJ0ZW5hbnRSZWYiOiJ0cl83MzUxM2E2OWE1NDlhZDIzYjdhOTA3NWU5NjJmOGUxZSJ9LCJtZWFzdXJlbWVudCI6eyJkZW5vbWluYXRvciI6NTAsIm1ldGhvZCI6eyJpZCI6ImNvdmVyYWdlLmVkciIsInZlcnNpb24iOjJ9LCJudW1lcmF0b3IiOjQ3LCJzY29wZSI6eyJkZXNjcmlwdGlvbiI6IkFjdGl2ZSBob3N0cyByZWNvbmNpbGVkIGFjcm9zcyBldmVyeSBjb25uZWN0ZWQgc291cmNlIiwidW5pdCI6Imhvc3QifSwidW5rbm93biI6Mn0sIm9ic2VydmVkQXQiOiIyMDI2LTEwLTAxVDExOjMwOjAwLjAwMFoiLCJyZWNlaXB0SWQiOiIwMU0zVk5CV0cwUFRUOUozQzVNM1NIQlg2MyIsInNvdXJjZXMiOlt7ImtpbmQiOiJJTlRFR1JBVElPTiIsInJlZiI6ImNyb3dkc3RyaWtlLWZhbGNvbiJ9LHsia2luZCI6IklOVEVHUkFUSU9OIiwicmVmIjoibWljcm9zb2Z0LWludHVuZSJ9XX0",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-6b1e79a70e777676",
+        "value": "1gS2OCGWlnFG1QQiRw7YFm98-gYmualS9ulJTyFo0rVcVPYLFNcPc08rQJrpmUz_7M3_XqQty9oESqfdc5o_Cw"
+      }
+    },
+    "trust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "deployments": [
+        "https://cmdash.example"
+      ],
+      "keyDocument": {
+        "format": "cmdash-proof-keys",
+        "v": 0,
+        "deployment": "https://cmdash.example",
+        "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+        "generatedAt": "2026-10-12T00:00:00.000Z",
+        "keys": [
+          {
+            "kid": "cmdash-proof-6b1e79a70e777676",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA5e-49s4AgO5sNiPLdEcCmPf5zLi_YzgegW2YxY0u4ww",
+            "status": "ACTIVE",
+            "validFrom": "2026-09-01T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-49cc0a17962bf560",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAtdR3vb8HWTIQo1mK4D_AEZxCTcK9YTVtKW98V3gMQNU",
+            "status": "RETIRED",
+            "validFrom": "2026-06-01T00:00:00.000Z",
+            "validUntil": "2026-09-01T00:00:00.000Z",
+            "lastTreeSize": 6
+          },
+          {
+            "kid": "cmdash-proof-93b3543cd9195d0a",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAMmkfkHGC2bicW-7GnHYbV9PE7oCkBos3KPB2ZlvdGXE",
+            "status": "REVOKED",
+            "validFrom": "2026-03-01T00:00:00.000Z",
+            "validUntil": "2026-06-01T00:00:00.000Z",
+            "revokedAt": "2026-09-15T00:00:00.000Z",
+            "revocationReason": "KEY_COMPROMISE"
+          },
+          {
+            "kid": "cmdash-proof-6f46ab5f22c8732d",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOBX4MjLWRNNan3MkMhovXprFDh0ZS1_yDoOMn-1wrQo",
+            "status": "REVOKED",
+            "validFrom": "2026-01-01T00:00:00.000Z",
+            "revokedAt": "2026-03-01T00:00:00.000Z",
+            "revocationReason": "ISSUER_REQUEST",
+            "lastTreeSize": 2
+          }
+        ],
+        "log": {
+          "format": "cmdash-proof-log-keys",
+          "v": 0,
+          "generatedAt": "2026-10-12T00:00:00.000Z",
+          "origin": "cmdash.example/cmdash-proof-log",
+          "keys": [
+            {
+              "kid": "cmdash-proof-log-aba8e87dc4aed5e8",
+              "alg": "Ed25519",
+              "publicKey": "MCowBQYDK2VwAyEAr7oBOjWCkgkuFF08g3JEM_1wKb1WxP0LD4EBQMDF_-k",
+              "status": "ACTIVE",
+              "validFrom": "2026-09-01T00:00:00.000Z"
+            }
+          ]
+        }
+      },
+      "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json"
+    }
+  },
+  "expect": {
+    "verdict": "VALID",
+    "failedCheck": null,
+    "rule": null,
+    "summaryPrefix": "VALID",
+    "keySource": "KEY_DOCUMENT",
+    "keyStatusAsOf": "2026-10-12T00:00:00.000Z",
+    "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json",
+    "plainHttp": false,
+    "checks": [
+      {
+        "name": "envelope.json",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.version",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.shape",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.decode",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.canonical",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.schema",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.kid",
+        "outcome": "PASS"
+      },
+      {
+        "name": "issuer.key",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.verify",
+        "outcome": "PASS"
+      },
+      {
+        "name": "log.inclusion",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.checkpoint",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.external",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key-status",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.consistency",
+        "outcome": "PASS"
+      },
+      {
+        "name": "assertion.admissible",
+        "outcome": "PASS"
+      },
+      {
+        "name": "time.future",
+        "outcome": "PASS"
+      },
+      {
+        "name": "freshness",
+        "outcome": "PASS"
+      }
+    ],
+    "proves": [
+      "signed-by-key",
+      "issuer-key-published",
+      "unaltered",
+      "observed-at",
+      "measurement-stated",
+      "fresh"
+    ],
+    "doesNotProve": [
+      "source-truth",
+      "scope-completeness",
+      "control-effectiveness",
+      "not-superseded",
+      "not-logged"
+    ],
+    "reading": {
+      "kind": "AT_LEAST",
+      "basis": "MEASURED",
+      "unit": "host",
+      "numerator": 47,
+      "denominator": 50,
+      "unknown": 2,
+      "percent": "94.00",
+      "threshold": {
+        "numerator": 9,
+        "denominator": 10,
+        "percent": "90.00"
+      }
+    },
+    "schema": "accept",
+    "digest": "5058412cbe40c38d581d269ff87f67d1862572fbdf31a087ef1191a9814a73ac"
+  },
+  "payloadText": "{\"claim\":{\"assertion\":{\"kind\":\"AT_LEAST\",\"threshold\":{\"denominator\":10,\"numerator\":9}},\"claimId\":\"cmmc-l2.si.edr-deployed\",\"controls\":[{\"controlId\":\"SI.L2-3.14.2\",\"framework\":\"cmmc-l2\"}],\"statement\":\"At least 90% of active hosts run the EDR agent.\"},\"evidence\":{\"algo\":\"sha256-salted\",\"commitment\":\"fe03ffbfe877d1e9b490cc2026dcf413119ba5879cc57e2a9fabb068dc317da4\"},\"freshUntil\":\"2026-10-31T11:30:00.000Z\",\"issuedAt\":\"2026-10-01T12:00:00.000Z\",\"issuer\":{\"deployment\":\"https://cmdash.example\",\"keyId\":\"cmdash-proof-6b1e79a70e777676\",\"tenantRef\":\"tr_73513a69a549ad23b7a9075e962f8e1e\"},\"measurement\":{\"denominator\":50,\"method\":{\"id\":\"coverage.edr\",\"version\":2},\"numerator\":47,\"scope\":{\"description\":\"Active hosts reconciled across every connected source\",\"unit\":\"host\"},\"unknown\":2},\"observedAt\":\"2026-10-01T11:30:00.000Z\",\"receiptId\":\"01M3VNBWG0PTT9J3C5M3SHBX63\",\"sources\":[{\"kind\":\"INTEGRATION\",\"ref\":\"crowdstrike-falcon\"},{\"kind\":\"INTEGRATION\",\"ref\":\"microsoft-intune\"}]}"
+}

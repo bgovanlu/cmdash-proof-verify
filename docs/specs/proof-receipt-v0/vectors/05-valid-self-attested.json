@@ -1,0 +1,232 @@
+{
+  "id": "05-valid-self-attested",
+  "title": "SELF_ATTESTED by the OWNER role; the opening and item 0 (the attestation record) match",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IlNFTEZfQVRURVNURUQifSwiY2xhaW1JZCI6ImNtbWMtbDIucGUudmlzaXRvci1lc2NvcnQiLCJjb250cm9scyI6W3siY29udHJvbElkIjoiUEUuTDItMy4xMC4zIiwiZnJhbWV3b3JrIjoiY21tYy1sMiJ9XSwic3RhdGVtZW50IjoiVmlzaXRvcnMgYXJlIGVzY29ydGVkIGFuZCB0aGVpciBhY3Rpdml0eSBpcyBtb25pdG9yZWQgYXQgZXZlcnkgZmFjaWxpdHkuIn0sImV2aWRlbmNlIjp7ImFsZ28iOiJzaGEyNTYtc2FsdGVkIiwiY29tbWl0bWVudCI6ImUwOWVjYmQ3MDhhY2RiODJhM2Q2NGJmNDg4N2I0MmVmNDg1NjcwNmFmM2Y2MzM1ZWI5NzA2ZGZjNjVlNWM0ZDYifSwiZnJlc2hVbnRpbCI6IjIwMjYtMTAtMzFUMTE6MzA6MDAuMDAwWiIsImlzc3VlZEF0IjoiMjAyNi0xMC0wMVQxMjowMDowMC4wMDBaIiwiaXNzdWVyIjp7ImRlcGxveW1lbnQiOiJodHRwczovL2NtZGFzaC5leGFtcGxlIiwia2V5SWQiOiJjbWRhc2gtcHJvb2YtNmIxZTc5YTcwZTc3NzY3NiIsInRlbmFudFJlZiI6InRyXzczNTEzYTY5YTU0OWFkMjNiN2E5MDc1ZTk2MmY4ZTFlIn0sIm9ic2VydmVkQXQiOiIyMDI2LTEwLTAxVDExOjMwOjAwLjAwMFoiLCJyZWNlaXB0SWQiOiIwMU0zVk5CV0cwN0pDWlIxSE40TlRWREdTRyIsInNlbGZBdHRlc3RlZCI6eyJhdCI6IjIwMjYtMTAtMDFUMTE6MzA6MDAuMDAwWiIsImJ5Um9sZSI6Ik9XTkVSIn0sInNvdXJjZXMiOlt7ImtpbmQiOiJQRVJTT04iLCJyZWYiOiJzZWxmLWF0dGVzdGF0aW9uIn1dfQ",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-6b1e79a70e777676",
+        "value": "q9vRadCfyh5EXfZKJE46isZKgzJViOWOHJsFYcIdVuqJnrM9-OHt3Isa4u1YVUJo4J_gykuinj_X33j-A5w0CQ"
+      }
+    },
+    "trust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "deployments": [
+        "https://cmdash.example"
+      ],
+      "keyDocument": {
+        "format": "cmdash-proof-keys",
+        "v": 0,
+        "deployment": "https://cmdash.example",
+        "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+        "generatedAt": "2026-10-12T00:00:00.000Z",
+        "keys": [
+          {
+            "kid": "cmdash-proof-6b1e79a70e777676",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA5e-49s4AgO5sNiPLdEcCmPf5zLi_YzgegW2YxY0u4ww",
+            "status": "ACTIVE",
+            "validFrom": "2026-09-01T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-49cc0a17962bf560",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAtdR3vb8HWTIQo1mK4D_AEZxCTcK9YTVtKW98V3gMQNU",
+            "status": "RETIRED",
+            "validFrom": "2026-06-01T00:00:00.000Z",
+            "validUntil": "2026-09-01T00:00:00.000Z",
+            "lastTreeSize": 6
+          },
+          {
+            "kid": "cmdash-proof-93b3543cd9195d0a",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAMmkfkHGC2bicW-7GnHYbV9PE7oCkBos3KPB2ZlvdGXE",
+            "status": "REVOKED",
+            "validFrom": "2026-03-01T00:00:00.000Z",
+            "validUntil": "2026-06-01T00:00:00.000Z",
+            "revokedAt": "2026-09-15T00:00:00.000Z",
+            "revocationReason": "KEY_COMPROMISE"
+          },
+          {
+            "kid": "cmdash-proof-6f46ab5f22c8732d",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOBX4MjLWRNNan3MkMhovXprFDh0ZS1_yDoOMn-1wrQo",
+            "status": "REVOKED",
+            "validFrom": "2026-01-01T00:00:00.000Z",
+            "revokedAt": "2026-03-01T00:00:00.000Z",
+            "revocationReason": "ISSUER_REQUEST",
+            "lastTreeSize": 2
+          }
+        ],
+        "log": {
+          "format": "cmdash-proof-log-keys",
+          "v": 0,
+          "generatedAt": "2026-10-12T00:00:00.000Z",
+          "origin": "cmdash.example/cmdash-proof-log",
+          "keys": [
+            {
+              "kid": "cmdash-proof-log-aba8e87dc4aed5e8",
+              "alg": "Ed25519",
+              "publicKey": "MCowBQYDK2VwAyEAr7oBOjWCkgkuFF08g3JEM_1wKb1WxP0LD4EBQMDF_-k",
+              "status": "ACTIVE",
+              "validFrom": "2026-09-01T00:00:00.000Z"
+            }
+          ]
+        }
+      },
+      "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json"
+    },
+    "evidenceOpening": {
+      "format": "cmdash-evidence-opening",
+      "v": 0,
+      "receiptId": "01M3VNBWG07JCZR1HN4NTVDGSG",
+      "salt": "35b9279c3ecdfcc355bca94d34b95029702c597c2230331234adabf46741df92",
+      "manifest": {
+        "receiptId": "01M3VNBWG07JCZR1HN4NTVDGSG",
+        "issuer": {
+          "deployment": "https://cmdash.example",
+          "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+          "keyId": "cmdash-proof-6b1e79a70e777676"
+        },
+        "claimId": "cmmc-l2.pe.visitor-escort",
+        "observedAt": "2026-10-01T11:30:00.000Z",
+        "selfAttested": {
+          "byRole": "OWNER",
+          "at": "2026-10-01T11:30:00.000Z"
+        },
+        "itemCount": 1,
+        "itemsRoot": "38e7c1af8d98d13008d5286a2298763ff8b12c87aa56342ea0828f5a397fb3ef"
+      }
+    },
+    "evidenceItems": [
+      {
+        "format": "cmdash-evidence-item",
+        "v": 0,
+        "receiptId": "01M3VNBWG07JCZR1HN4NTVDGSG",
+        "index": 0,
+        "itemCount": 1,
+        "salt": "7df7f130803483a7927aa898d80de37fa0ea2c01fca38a9b666205289f97ec79",
+        "item": {
+          "statement": "Visitors are escorted and their activity is monitored at every facility.",
+          "userId": "0b6f3d2a-4c1e-4f7a-9d2b-5e8c1a7f3b90"
+        },
+        "proof": []
+      }
+    ]
+  },
+  "expect": {
+    "verdict": "VALID",
+    "failedCheck": null,
+    "rule": null,
+    "summaryPrefix": "VALID",
+    "keySource": "KEY_DOCUMENT",
+    "keyStatusAsOf": "2026-10-12T00:00:00.000Z",
+    "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json",
+    "plainHttp": false,
+    "checks": [
+      {
+        "name": "envelope.json",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.version",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.shape",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.decode",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.canonical",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.schema",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.kid",
+        "outcome": "PASS"
+      },
+      {
+        "name": "issuer.key",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.verify",
+        "outcome": "PASS"
+      },
+      {
+        "name": "log.inclusion",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.checkpoint",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.external",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key-status",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.consistency",
+        "outcome": "PASS"
+      },
+      {
+        "name": "assertion.admissible",
+        "outcome": "PASS"
+      },
+      {
+        "name": "time.future",
+        "outcome": "PASS"
+      },
+      {
+        "name": "freshness",
+        "outcome": "PASS"
+      }
+    ],
+    "proves": [
+      "signed-by-key",
+      "issuer-key-published",
+      "unaltered",
+      "observed-at",
+      "attestation-stated",
+      "fresh"
+    ],
+    "doesNotProve": [
+      "attestation-truth",
+      "control-effectiveness",
+      "not-superseded",
+      "not-logged"
+    ],
+    "reading": {
+      "kind": "SELF_ATTESTED",
+      "basis": "SELF_ATTESTED",
+      "byRole": "OWNER",
+      "at": "2026-10-01T11:30:00.000Z"
+    },
+    "schema": "accept",
+    "digest": "1846a2399a5806451d34e6014087e7095e50fcc769dcf3090463b5edac4c1fda",
+    "evidenceOpening": {
+      "match": true,
+      "rule": null
+    },
+    "evidenceItems": [
+      {
+        "match": true,
+        "rule": null
+      }
+    ]
+  },
+  "payloadText": "{\"claim\":{\"assertion\":{\"kind\":\"SELF_ATTESTED\"},\"claimId\":\"cmmc-l2.pe.visitor-escort\",\"controls\":[{\"controlId\":\"PE.L2-3.10.3\",\"framework\":\"cmmc-l2\"}],\"statement\":\"Visitors are escorted and their activity is monitored at every facility.\"},\"evidence\":{\"algo\":\"sha256-salted\",\"commitment\":\"e09ecbd708acdb82a3d64bf4887b42ef4856706af3f6335eb9706dfc65e5c4d6\"},\"freshUntil\":\"2026-10-31T11:30:00.000Z\",\"issuedAt\":\"2026-10-01T12:00:00.000Z\",\"issuer\":{\"deployment\":\"https://cmdash.example\",\"keyId\":\"cmdash-proof-6b1e79a70e777676\",\"tenantRef\":\"tr_73513a69a549ad23b7a9075e962f8e1e\"},\"observedAt\":\"2026-10-01T11:30:00.000Z\",\"receiptId\":\"01M3VNBWG07JCZR1HN4NTVDGSG\",\"selfAttested\":{\"at\":\"2026-10-01T11:30:00.000Z\",\"byRole\":\"OWNER\"},\"sources\":[{\"kind\":\"PERSON\",\"ref\":\"self-attestation\"}]}"
+}

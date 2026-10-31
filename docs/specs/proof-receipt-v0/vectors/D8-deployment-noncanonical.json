@@ -1,0 +1,169 @@
+{
+  "id": "D8-deployment-noncanonical",
+  "title": "issuer.deployment spelled with its default port: one origin, two spellings",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IkFMTCJ9LCJjbGFpbUlkIjoiY21tYy1sMi5pYS5tZmEtZW5yb2xsZWQiLCJjb250cm9scyI6W3siY29udHJvbElkIjoiSUEuTDItMy41LjMiLCJmcmFtZXdvcmsiOiJjbW1jLWwyIn0seyJjb250cm9sSWQiOiIzLjUuMyIsImZyYW1ld29yayI6Im5pc3QtODAwLTE3MS1yMiJ9XSwic3RhdGVtZW50IjoiRXZlcnkgYWN0aXZlIHVzZXIgYWNjb3VudCBpcyBlbnJvbGxlZCBpbiBtdWx0aS1mYWN0b3IgYXV0aGVudGljYXRpb24uIn0sImV2aWRlbmNlIjp7ImFsZ28iOiJzaGEyNTYtc2FsdGVkIiwiY29tbWl0bWVudCI6IjAwMTBiODU3MDM2MjNlYWUzMzdjZDEwODliNmI2M2Y0MjgxMTQ3NjNhMzA3NWEwOGMxYmNkYjE1YjA0MDk1ZGMifSwiZnJlc2hVbnRpbCI6IjIwMjYtMTAtMzFUMTE6MzA6MDAuMDAwWiIsImlzc3VlZEF0IjoiMjAyNi0xMC0wMVQxMjowMDowMC4wMDBaIiwiaXNzdWVyIjp7ImRlcGxveW1lbnQiOiJodHRwczovL2NtZGFzaC5leGFtcGxlOjQ0MyIsImtleUlkIjoiY21kYXNoLXByb29mLTZiMWU3OWE3MGU3Nzc2NzYiLCJ0ZW5hbnRSZWYiOiJ0cl83MzUxM2E2OWE1NDlhZDIzYjdhOTA3NWU5NjJmOGUxZSJ9LCJtZWFzdXJlbWVudCI6eyJkZW5vbWluYXRvciI6MTI4LCJtZXRob2QiOnsiaWQiOiJpZGVudGl0eS1jb3ZlcmFnZS5tZmEtZW5yb2xsZWQiLCJ2ZXJzaW9uIjoxfSwibnVtZXJhdG9yIjoxMjgsInNjb3BlIjp7ImRlc2NyaXB0aW9uIjoiQWN0aXZlIHVzZXIgYWNjb3VudHMgaW4gdGhlIGNvbm5lY3RlZCBpZGVudGl0eSBwcm92aWRlciIsInVuaXQiOiJ1c2VyIn0sInVua25vd24iOjB9LCJvYnNlcnZlZEF0IjoiMjAyNi0xMC0wMVQxMTozMDowMC4wMDBaIiwicmVjZWlwdElkIjoiMDFNM1ZOQldHME1QRzBSMFlKOE4wWU5BRFoiLCJzb3VyY2VzIjpbeyJraW5kIjoiSU5URUdSQVRJT04iLCJyZWYiOiJva3RhIn1dfQ",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-6b1e79a70e777676",
+        "value": "rBrPJdNe5q4xwPNG4Ssndvio_lohlYp2JToqvO3awju3UZnho3SxnDxl4ymCtmXHc3MW3kM_tKjVJlXnkKXvBA"
+      }
+    },
+    "trust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "deployments": [
+        "https://cmdash.example"
+      ],
+      "keyDocument": {
+        "format": "cmdash-proof-keys",
+        "v": 0,
+        "deployment": "https://cmdash.example",
+        "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+        "generatedAt": "2026-10-12T00:00:00.000Z",
+        "keys": [
+          {
+            "kid": "cmdash-proof-6b1e79a70e777676",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA5e-49s4AgO5sNiPLdEcCmPf5zLi_YzgegW2YxY0u4ww",
+            "status": "ACTIVE",
+            "validFrom": "2026-09-01T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-49cc0a17962bf560",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAtdR3vb8HWTIQo1mK4D_AEZxCTcK9YTVtKW98V3gMQNU",
+            "status": "RETIRED",
+            "validFrom": "2026-06-01T00:00:00.000Z",
+            "validUntil": "2026-09-01T00:00:00.000Z",
+            "lastTreeSize": 6
+          },
+          {
+            "kid": "cmdash-proof-93b3543cd9195d0a",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAMmkfkHGC2bicW-7GnHYbV9PE7oCkBos3KPB2ZlvdGXE",
+            "status": "REVOKED",
+            "validFrom": "2026-03-01T00:00:00.000Z",
+            "validUntil": "2026-06-01T00:00:00.000Z",
+            "revokedAt": "2026-09-15T00:00:00.000Z",
+            "revocationReason": "KEY_COMPROMISE"
+          },
+          {
+            "kid": "cmdash-proof-6f46ab5f22c8732d",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOBX4MjLWRNNan3MkMhovXprFDh0ZS1_yDoOMn-1wrQo",
+            "status": "REVOKED",
+            "validFrom": "2026-01-01T00:00:00.000Z",
+            "revokedAt": "2026-03-01T00:00:00.000Z",
+            "revocationReason": "ISSUER_REQUEST",
+            "lastTreeSize": 2
+          }
+        ],
+        "log": {
+          "format": "cmdash-proof-log-keys",
+          "v": 0,
+          "generatedAt": "2026-10-12T00:00:00.000Z",
+          "origin": "cmdash.example/cmdash-proof-log",
+          "keys": [
+            {
+              "kid": "cmdash-proof-log-aba8e87dc4aed5e8",
+              "alg": "Ed25519",
+              "publicKey": "MCowBQYDK2VwAyEAr7oBOjWCkgkuFF08g3JEM_1wKb1WxP0LD4EBQMDF_-k",
+              "status": "ACTIVE",
+              "validFrom": "2026-09-01T00:00:00.000Z"
+            }
+          ]
+        }
+      },
+      "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json"
+    }
+  },
+  "expect": {
+    "verdict": "INVALID",
+    "failedCheck": "payload.schema",
+    "rule": null,
+    "summaryPrefix": "INVALID",
+    "keySource": null,
+    "keyStatusAsOf": null,
+    "keyDocumentUrl": null,
+    "plainHttp": false,
+    "checks": [
+      {
+        "name": "envelope.json",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.version",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.shape",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.decode",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.canonical",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.schema",
+        "outcome": "FAIL",
+        "effect": "INVALID"
+      },
+      {
+        "name": "signature.kid",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "signature.verify",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.inclusion",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.checkpoint",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.external",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key-status",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "payload.consistency",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "assertion.admissible",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "time.future",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "freshness",
+        "outcome": "SKIP"
+      }
+    ],
+    "proves": [],
+    "doesNotProve": [],
+    "reading": null,
+    "schema": "reject",
+    "digest": "68c8201b8a2b88a26e8300ae0dd323dc54f422f98e0787ba917d484dc3807149"
+  },
+  "payloadText": "{\"claim\":{\"assertion\":{\"kind\":\"ALL\"},\"claimId\":\"cmmc-l2.ia.mfa-enrolled\",\"controls\":[{\"controlId\":\"IA.L2-3.5.3\",\"framework\":\"cmmc-l2\"},{\"controlId\":\"3.5.3\",\"framework\":\"nist-800-171-r2\"}],\"statement\":\"Every active user account is enrolled in multi-factor authentication.\"},\"evidence\":{\"algo\":\"sha256-salted\",\"commitment\":\"0010b85703623eae337cd1089b6b63f428114763a3075a08c1bcdb15b04095dc\"},\"freshUntil\":\"2026-10-31T11:30:00.000Z\",\"issuedAt\":\"2026-10-01T12:00:00.000Z\",\"issuer\":{\"deployment\":\"https://cmdash.example:443\",\"keyId\":\"cmdash-proof-6b1e79a70e777676\",\"tenantRef\":\"tr_73513a69a549ad23b7a9075e962f8e1e\"},\"measurement\":{\"denominator\":128,\"method\":{\"id\":\"identity-coverage.mfa-enrolled\",\"version\":1},\"numerator\":128,\"scope\":{\"description\":\"Active user accounts in the connected identity provider\",\"unit\":\"user\"},\"unknown\":0},\"observedAt\":\"2026-10-01T11:30:00.000Z\",\"receiptId\":\"01M3VNBWG0MPG0R0YJ8N0YNADZ\",\"sources\":[{\"kind\":\"INTEGRATION\",\"ref\":\"okta\"}]}"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "C14-self-attested-receipt",
+  "title": "A self-attested receipt has no measurement a collector could attest",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IlNFTEZfQVRURVNURUQifSwiY2xhaW1JZCI6ImNvbGxlY3Rvci1hdHRlc3RlZC5zaS5tYWxpY2lvdXMtY29kZS1wcm90ZWN0aW9uIiwiY29udHJvbHMiOlt7ImNvbnRyb2xJZCI6IlNJLkwyLTMuMTQuMiIsImZyYW1ld29yayI6ImNtbWMtbDIifV0sInN0YXRlbWVudCI6IkV2ZXJ5IGhvc3QgcnVucyBhbiBhY3RpdmUgZW5kcG9pbnQtZGV0ZWN0aW9uIGFnZW50LiJ9LCJldmlkZW5jZSI6eyJhbGdvIjoic2hhMjU2LXNhbHRlZCIsImNvbW1pdG1lbnQiOiJhMzdlMDFhMTg2M2YxNGRjZWY0ZTA3MjgwYmYxNTJiYzNkYTg1NTBmNmViMmJjODNmYzlhNDNmM2NmYmMyNWU2In0sImZyZXNoVW50aWwiOiIyMDI2LTEwLTE1VDExOjMwOjAwLjAwMFoiLCJpc3N1ZWRBdCI6IjIwMjYtMTAtMDFUMTI6MDA6MDAuMDAwWiIsImlzc3VlciI6eyJkZXBsb3ltZW50IjoiaHR0cHM6Ly9jbWRhc2guZXhhbXBsZSIsImtleUlkIjoiY21kYXNoLXByb29mLTMxZTg3Njc0ODFjYjFmZjgiLCJ0ZW5hbnRSZWYiOiJ0cl83MzUxM2E2OWE1NDlhZDIzYjdhOTA3NWU5NjJmOGUxZSJ9LCJvYnNlcnZlZEF0IjoiMjAyNi0xMC0wMVQxMTozMDowMC4wMDBaIiwicmVjZWlwdElkIjoiMDFNM1ZOQldHMFcxRjVZRVJXQTJKRjlZRFkiLCJzZWxmQXR0ZXN0ZWQiOnsiYXQiOiIyMDI2LTEwLTAxVDExOjMwOjAwLjAwMFoiLCJieVJvbGUiOiJPV05FUiJ9LCJzb3VyY2VzIjpbeyJraW5kIjoiUEVSU09OIiwicmVmIjoic2VsZi1hdHRlc3RhdGlvbiJ9XX0",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-31e8767481cb1ff8",
+        "value": "AF0rc9vfesIJjvTWUCVmaSZgmzrfZ_yuHhSRot2WbV4yqmLS1lBLOlXaJSX8b4M0qmqm-e-66F1_rtxbQXREDQ"
+      }
+    },
+    "attestation": {
+      "format": "cmdash-collector-attestation",
+      "v": 0,
+      "collectorKey": {
+        "kid": "cmdash-collector-8d7430420c19f8d7",
+        "alg": "Ed25519",
+        "publicKey": "MCowBQYDK2VwAyEAA1ZUGAvwvl0DZOn3uRBsOHOBuWbOl39WbgowiF73iXw"
+      },
+      "statement": "eyJjb2xsZWN0b3JLZXlJZCI6ImNtZGFzaC1jb2xsZWN0b3ItOGQ3NDMwNDIwYzE5ZjhkNyIsImRlbm9taW5hdG9yIjo1MCwiZGVwbG95bWVudCI6Imh0dHBzOi8vY21kYXNoLmV4YW1wbGUiLCJtZWFzdXJlZEF0IjoiMjAyNi0xMC0wMVQxMTozMDowMC4wMDBaIiwibWV0cmljIjoiZWRyLWNvdmVyYWdlIiwibm9uY2UiOiIwMDExMjIzMzQ0NTU2Njc3ODg5OWFhYmJjY2RkZWVmZiIsIm51bWVyYXRvciI6NDcsInNlcSI6MTc5MDAwMDAwMDAwMCwidGVuYW50UmVmIjoidHJfNzM1MTNhNjlhNTQ5YWQyM2I3YTkwNzVlOTYyZjhlMWUiLCJ1bmtub3duIjoxLCJ2IjowfQ",
+      "sig": "2jRBKJvTOHkIgK7OOmo0xfx-cW41sfRzMeHWOvOjZFE7Dt9FM3cTvpwWG5jUrlTK-2exT4zN0Le2nvRB4gKUAg"
+    },
+    "receiptTrust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "publicKeys": [
+        {
+          "deployment": "https://cmdash.example",
+          "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+          "publicKey": "MCowBQYDK2VwAyEA6p4hNds-WExKb-croy_F7biS4c4oh7SlDnV6PNPOufc"
+        }
+      ]
+    }
+  },
+  "expect": {
+    "status": "MISMATCH",
+    "rule": "collector.not-measured",
+    "keySource": null,
+    "revokedAt": null,
+    "proves": [],
+    "doesNotProve": []
+  },
+  "receiptExpect": {
+    "verdict": "VALID"
+  }
+}

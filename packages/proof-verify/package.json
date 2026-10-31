@@ -1,0 +1,49 @@
+{
+  "name": "@cmdash/proof-verify",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Independent verifier for CMDash proof receipts (docs/specs/proof-receipt-v0.md): a zero-dependency library, the cmdash-verify CLI and a browser build. Verification never needs CMDash.",
+  "author": "CMDash <support@cmdash.com>",
+  "keywords": [
+    "cmdash",
+    "proof-receipt",
+    "verifier",
+    "ed25519",
+    "transparency-log",
+    "compliance",
+    "cli"
+  ],
+  "homepage": "https://github.com/bgovanlu/cmdash/tree/main/packages/proof-verify",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "github:bgovanlu/cmdash",
+    "directory": "packages/proof-verify"
+  },
+  "type": "module",
+  "main": "./lib/verify.mjs",
+  "exports": {
+    ".": "./lib/verify.mjs",
+    "./browser": "./browser/verify.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "cmdash-verify": "./bin/cmdash-verify.mjs"
+  },
+  "files": [
+    "lib",
+    "bin",
+    "browser",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build:browser": "node scripts/build-browser.mjs",
+    "test": "node --test \"test/*.test.js\"",
+    "test:ci": "node --test --experimental-test-coverage --test-coverage-include=\"lib/**\" --test-coverage-include=\"scripts/**\" --test-coverage-lines=97 --test-coverage-branches=94 --test-coverage-functions=95 \"test/*.test.js\""
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

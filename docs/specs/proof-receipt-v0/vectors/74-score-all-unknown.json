@@ -1,0 +1,169 @@
+{
+  "id": "74-score-all-unknown",
+  "title": "SPRS 109 of -203..110 with all 110 practices unknown: every unknown scores as not met, so only the minimum is admissible",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IlNDT1JFIiwibWF4IjoxMTAsIm1pbiI6LTIwMywidmFsdWUiOjEwOX0sImNsYWltSWQiOiJjbW1jLWwyLnNwcnMtc2NvcmUiLCJjb250cm9scyI6W10sInN0YXRlbWVudCI6IlNQUlMgc2NvcmUgb2YgdGhlIE5JU1QgU1AgODAwLTE3MSBzZWxmLWFzc2Vzc21lbnQuIn0sImV2aWRlbmNlIjp7ImFsZ28iOiJzaGEyNTYtc2FsdGVkIiwiY29tbWl0bWVudCI6ImYxODU0MmZhMDk5ODM0YjFmODNkN2VhMjYzMWMwZjRhMGE0MTZiYTVjNTIwY2JlZGMxNzIxMzk4NzVkYmEyMmMifSwiZnJlc2hVbnRpbCI6IjIwMjYtMTAtMzFUMTE6MzA6MDAuMDAwWiIsImlzc3VlZEF0IjoiMjAyNi0xMC0wMVQxMjowMDowMC4wMDBaIiwiaXNzdWVyIjp7ImRlcGxveW1lbnQiOiJodHRwczovL2NtZGFzaC5leGFtcGxlIiwia2V5SWQiOiJjbWRhc2gtcHJvb2YtNmIxZTc5YTcwZTc3NzY3NiIsInRlbmFudFJlZiI6InRyXzczNTEzYTY5YTU0OWFkMjNiN2E5MDc1ZTk2MmY4ZTFlIn0sIm1lYXN1cmVtZW50Ijp7ImRlbm9taW5hdG9yIjoxMTAsIm1ldGhvZCI6eyJpZCI6InNwcnMuc2NvcmUiLCJ2ZXJzaW9uIjoxfSwibnVtZXJhdG9yIjowLCJzY29wZSI6eyJkZXNjcmlwdGlvbiI6Ik5JU1QgU1AgODAwLTE3MSBSZXYuIDIgc2VjdXJpdHkgcmVxdWlyZW1lbnRzIiwidW5pdCI6InByYWN0aWNlIn0sInVua25vd24iOjExMH0sIm9ic2VydmVkQXQiOiIyMDI2LTEwLTAxVDExOjMwOjAwLjAwMFoiLCJyZWNlaXB0SWQiOiIwMU0zVk5CV0cwV1AwWU5LR00yWjU4WTkySiIsInNvdXJjZXMiOlt7ImtpbmQiOiJURU5BTlRfUkVDT1JEIiwicmVmIjoiY29udHJvbC1hc3Nlc3NtZW50In1dfQ",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-6b1e79a70e777676",
+        "value": "jXNA_yxpPk6sU9yA2m1GM8liBYtE0ynRvg_E3qU4b7oeN9dK8f6OT6H8cDu7Pb3M0hZ9nYV_iFGERegquPylAA"
+      }
+    },
+    "trust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "deployments": [
+        "https://cmdash.example"
+      ],
+      "keyDocument": {
+        "format": "cmdash-proof-keys",
+        "v": 0,
+        "deployment": "https://cmdash.example",
+        "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+        "generatedAt": "2026-10-12T00:00:00.000Z",
+        "keys": [
+          {
+            "kid": "cmdash-proof-6b1e79a70e777676",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA5e-49s4AgO5sNiPLdEcCmPf5zLi_YzgegW2YxY0u4ww",
+            "status": "ACTIVE",
+            "validFrom": "2026-09-01T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-49cc0a17962bf560",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAtdR3vb8HWTIQo1mK4D_AEZxCTcK9YTVtKW98V3gMQNU",
+            "status": "RETIRED",
+            "validFrom": "2026-06-01T00:00:00.000Z",
+            "validUntil": "2026-09-01T00:00:00.000Z",
+            "lastTreeSize": 6
+          },
+          {
+            "kid": "cmdash-proof-93b3543cd9195d0a",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAMmkfkHGC2bicW-7GnHYbV9PE7oCkBos3KPB2ZlvdGXE",
+            "status": "REVOKED",
+            "validFrom": "2026-03-01T00:00:00.000Z",
+            "validUntil": "2026-06-01T00:00:00.000Z",
+            "revokedAt": "2026-09-15T00:00:00.000Z",
+            "revocationReason": "KEY_COMPROMISE"
+          },
+          {
+            "kid": "cmdash-proof-6f46ab5f22c8732d",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOBX4MjLWRNNan3MkMhovXprFDh0ZS1_yDoOMn-1wrQo",
+            "status": "REVOKED",
+            "validFrom": "2026-01-01T00:00:00.000Z",
+            "revokedAt": "2026-03-01T00:00:00.000Z",
+            "revocationReason": "ISSUER_REQUEST",
+            "lastTreeSize": 2
+          }
+        ],
+        "log": {
+          "format": "cmdash-proof-log-keys",
+          "v": 0,
+          "generatedAt": "2026-10-12T00:00:00.000Z",
+          "origin": "cmdash.example/cmdash-proof-log",
+          "keys": [
+            {
+              "kid": "cmdash-proof-log-aba8e87dc4aed5e8",
+              "alg": "Ed25519",
+              "publicKey": "MCowBQYDK2VwAyEAr7oBOjWCkgkuFF08g3JEM_1wKb1WxP0LD4EBQMDF_-k",
+              "status": "ACTIVE",
+              "validFrom": "2026-09-01T00:00:00.000Z"
+            }
+          ]
+        }
+      },
+      "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json"
+    }
+  },
+  "expect": {
+    "verdict": "INVALID",
+    "failedCheck": "assertion.admissible",
+    "rule": "SCORE.all-unknown-is-min",
+    "summaryPrefix": "INVALID",
+    "keySource": "KEY_DOCUMENT",
+    "keyStatusAsOf": "2026-10-12T00:00:00.000Z",
+    "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json",
+    "plainHttp": false,
+    "checks": [
+      {
+        "name": "envelope.json",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.version",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.shape",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.decode",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.canonical",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.schema",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.kid",
+        "outcome": "PASS"
+      },
+      {
+        "name": "issuer.key",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.verify",
+        "outcome": "PASS"
+      },
+      {
+        "name": "log.inclusion",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.checkpoint",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.external",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key-status",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.consistency",
+        "outcome": "PASS"
+      },
+      {
+        "name": "assertion.admissible",
+        "outcome": "FAIL",
+        "effect": "INVALID"
+      },
+      {
+        "name": "time.future",
+        "outcome": "PASS"
+      },
+      {
+        "name": "freshness",
+        "outcome": "PASS"
+      }
+    ],
+    "proves": [],
+    "doesNotProve": [],
+    "reading": null,
+    "schema": "accept",
+    "digest": "8c390b2d2da9d9458e913635274b9f0127abf43aa37afcfa78d345a0027bf85e"
+  },
+  "payloadText": "{\"claim\":{\"assertion\":{\"kind\":\"SCORE\",\"max\":110,\"min\":-203,\"value\":109},\"claimId\":\"cmmc-l2.sprs-score\",\"controls\":[],\"statement\":\"SPRS score of the NIST SP 800-171 self-assessment.\"},\"evidence\":{\"algo\":\"sha256-salted\",\"commitment\":\"f18542fa099834b1f83d7ea2631c0f4a0a416ba5c520cbedc172139875dba22c\"},\"freshUntil\":\"2026-10-31T11:30:00.000Z\",\"issuedAt\":\"2026-10-01T12:00:00.000Z\",\"issuer\":{\"deployment\":\"https://cmdash.example\",\"keyId\":\"cmdash-proof-6b1e79a70e777676\",\"tenantRef\":\"tr_73513a69a549ad23b7a9075e962f8e1e\"},\"measurement\":{\"denominator\":110,\"method\":{\"id\":\"sprs.score\",\"version\":1},\"numerator\":0,\"scope\":{\"description\":\"NIST SP 800-171 Rev. 2 security requirements\",\"unit\":\"practice\"},\"unknown\":110},\"observedAt\":\"2026-10-01T11:30:00.000Z\",\"receiptId\":\"01M3VNBWG0WP0YNKGM2Z58Y92J\",\"sources\":[{\"kind\":\"TENANT_RECORD\",\"ref\":\"control-assessment\"}]}"
+}

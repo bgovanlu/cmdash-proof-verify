@@ -1,0 +1,169 @@
+{
+  "id": "A1-payload-byte-order-mark",
+  "title": "The payload bytes start with a UTF-8 byte-order mark",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "77u_eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IkFMTCJ9LCJjbGFpbUlkIjoiY21tYy1sMi5pYS5tZmEtZW5yb2xsZWQiLCJjb250cm9scyI6W3siY29udHJvbElkIjoiSUEuTDItMy41LjMiLCJmcmFtZXdvcmsiOiJjbW1jLWwyIn0seyJjb250cm9sSWQiOiIzLjUuMyIsImZyYW1ld29yayI6Im5pc3QtODAwLTE3MS1yMiJ9XSwic3RhdGVtZW50IjoiRXZlcnkgYWN0aXZlIHVzZXIgYWNjb3VudCBpcyBlbnJvbGxlZCBpbiBtdWx0aS1mYWN0b3IgYXV0aGVudGljYXRpb24uIn0sImV2aWRlbmNlIjp7ImFsZ28iOiJzaGEyNTYtc2FsdGVkIiwiY29tbWl0bWVudCI6ImQ2MGM0NzU1NTg2NWFkZjk5Zjc4OTc5NzRmM2MwZjM3OWI0NjY0NDUxZGFlZDBkNWY0ODdmYjQ1NDIxYjY5YTcifSwiZnJlc2hVbnRpbCI6IjIwMjYtMTAtMzFUMTE6MzA6MDAuMDAwWiIsImlzc3VlZEF0IjoiMjAyNi0xMC0wMVQxMjowMDowMC4wMDBaIiwiaXNzdWVyIjp7ImRlcGxveW1lbnQiOiJodHRwczovL2NtZGFzaC5leGFtcGxlIiwia2V5SWQiOiJjbWRhc2gtcHJvb2YtNmIxZTc5YTcwZTc3NzY3NiIsInRlbmFudFJlZiI6InRyXzczNTEzYTY5YTU0OWFkMjNiN2E5MDc1ZTk2MmY4ZTFlIn0sIm1lYXN1cmVtZW50Ijp7ImRlbm9taW5hdG9yIjoxMjgsIm1ldGhvZCI6eyJpZCI6ImlkZW50aXR5LWNvdmVyYWdlLm1mYS1lbnJvbGxlZCIsInZlcnNpb24iOjF9LCJudW1lcmF0b3IiOjEyOCwic2NvcGUiOnsiZGVzY3JpcHRpb24iOiJBY3RpdmUgdXNlciBhY2NvdW50cyBpbiB0aGUgY29ubmVjdGVkIGlkZW50aXR5IHByb3ZpZGVyIiwidW5pdCI6InVzZXIifSwidW5rbm93biI6MH0sIm9ic2VydmVkQXQiOiIyMDI2LTEwLTAxVDExOjMwOjAwLjAwMFoiLCJyZWNlaXB0SWQiOiIwMU0zVk5CV0cwRFJFUUUzRk5aRUZIOEFXOCIsInNvdXJjZXMiOlt7ImtpbmQiOiJJTlRFR1JBVElPTiIsInJlZiI6Im9rdGEifV19",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-6b1e79a70e777676",
+        "value": "1MovcL7IGFDgDphcgamEjdn7OTh6q26VVEbZG-lHq1fEpSwIRPAQZbYx6EtrxEQNMwtR8fvCooY2fTDajM3nCQ"
+      }
+    },
+    "trust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "deployments": [
+        "https://cmdash.example"
+      ],
+      "keyDocument": {
+        "format": "cmdash-proof-keys",
+        "v": 0,
+        "deployment": "https://cmdash.example",
+        "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+        "generatedAt": "2026-10-12T00:00:00.000Z",
+        "keys": [
+          {
+            "kid": "cmdash-proof-6b1e79a70e777676",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA5e-49s4AgO5sNiPLdEcCmPf5zLi_YzgegW2YxY0u4ww",
+            "status": "ACTIVE",
+            "validFrom": "2026-09-01T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-49cc0a17962bf560",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAtdR3vb8HWTIQo1mK4D_AEZxCTcK9YTVtKW98V3gMQNU",
+            "status": "RETIRED",
+            "validFrom": "2026-06-01T00:00:00.000Z",
+            "validUntil": "2026-09-01T00:00:00.000Z",
+            "lastTreeSize": 6
+          },
+          {
+            "kid": "cmdash-proof-93b3543cd9195d0a",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAMmkfkHGC2bicW-7GnHYbV9PE7oCkBos3KPB2ZlvdGXE",
+            "status": "REVOKED",
+            "validFrom": "2026-03-01T00:00:00.000Z",
+            "validUntil": "2026-06-01T00:00:00.000Z",
+            "revokedAt": "2026-09-15T00:00:00.000Z",
+            "revocationReason": "KEY_COMPROMISE"
+          },
+          {
+            "kid": "cmdash-proof-6f46ab5f22c8732d",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOBX4MjLWRNNan3MkMhovXprFDh0ZS1_yDoOMn-1wrQo",
+            "status": "REVOKED",
+            "validFrom": "2026-01-01T00:00:00.000Z",
+            "revokedAt": "2026-03-01T00:00:00.000Z",
+            "revocationReason": "ISSUER_REQUEST",
+            "lastTreeSize": 2
+          }
+        ],
+        "log": {
+          "format": "cmdash-proof-log-keys",
+          "v": 0,
+          "generatedAt": "2026-10-12T00:00:00.000Z",
+          "origin": "cmdash.example/cmdash-proof-log",
+          "keys": [
+            {
+              "kid": "cmdash-proof-log-aba8e87dc4aed5e8",
+              "alg": "Ed25519",
+              "publicKey": "MCowBQYDK2VwAyEAr7oBOjWCkgkuFF08g3JEM_1wKb1WxP0LD4EBQMDF_-k",
+              "status": "ACTIVE",
+              "validFrom": "2026-09-01T00:00:00.000Z"
+            }
+          ]
+        }
+      },
+      "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json"
+    }
+  },
+  "expect": {
+    "verdict": "INVALID",
+    "failedCheck": "payload.decode",
+    "rule": null,
+    "summaryPrefix": "INVALID",
+    "keySource": null,
+    "keyStatusAsOf": null,
+    "keyDocumentUrl": null,
+    "plainHttp": false,
+    "checks": [
+      {
+        "name": "envelope.json",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.version",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.shape",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.decode",
+        "outcome": "FAIL",
+        "effect": "INVALID"
+      },
+      {
+        "name": "payload.canonical",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "payload.schema",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "signature.kid",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "signature.verify",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.inclusion",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.checkpoint",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.external",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key-status",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "payload.consistency",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "assertion.admissible",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "time.future",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "freshness",
+        "outcome": "SKIP"
+      }
+    ],
+    "proves": [],
+    "doesNotProve": [],
+    "reading": null,
+    "schema": "reject",
+    "digest": "42aa70e8ba51ef417a34ad717bf4f89735ceff4c444ae0fb690e129aaa2d1a21"
+  },
+  "payloadHex": "efbbbf7b22636c61696d223a7b22617373657274696f6e223a7b226b696e64223a22414c4c227d2c22636c61696d4964223a22636d6d632d6c322e69612e6d66612d656e726f6c6c6564222c22636f6e74726f6c73223a5b7b22636f6e74726f6c4964223a2249412e4c322d332e352e33222c226672616d65776f726b223a22636d6d632d6c32227d2c7b22636f6e74726f6c4964223a22332e352e33222c226672616d65776f726b223a226e6973742d3830302d3137312d7232227d5d2c2273746174656d656e74223a224576657279206163746976652075736572206163636f756e7420697320656e726f6c6c656420696e206d756c74692d666163746f722061757468656e7469636174696f6e2e227d2c2265766964656e6365223a7b22616c676f223a227368613235362d73616c746564222c22636f6d6d69746d656e74223a2264363063343735353538363561646639396637383937393734663363306633373962343636343435316461656430643566343837666234353432316236396137227d2c226672657368556e74696c223a22323032362d31302d33315431313a33303a30302e3030305a222c226973737565644174223a22323032362d31302d30315431323a30303a30302e3030305a222c22697373756572223a7b226465706c6f796d656e74223a2268747470733a2f2f636d646173682e6578616d706c65222c226b65794964223a22636d646173682d70726f6f662d36623165373961373065373737363736222c2274656e616e74526566223a2274725f3733353133613639613534396164323362376139303735653936326638653165227d2c226d6561737572656d656e74223a7b2264656e6f6d696e61746f72223a3132382c226d6574686f64223a7b226964223a226964656e746974792d636f7665726167652e6d66612d656e726f6c6c6564222c2276657273696f6e223a317d2c226e756d657261746f72223a3132382c2273636f7065223a7b226465736372697074696f6e223a224163746976652075736572206163636f756e747320696e2074686520636f6e6e6563746564206964656e746974792070726f7669646572222c22756e6974223a2275736572227d2c22756e6b6e6f776e223a307d2c226f627365727665644174223a22323032362d31302d30315431313a33303a30302e3030305a222c22726563656970744964223a2230314d33564e42574730445245514533464e5a45464838415738222c22736f7572636573223a5b7b226b696e64223a22494e544547524154494f4e222c22726566223a226f6b7461227d5d7d"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "cmdash-proof-verify",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Independent verifier for CMDash proof receipts: a zero-dependency library, CLI and browser build. Apache-2.0. Repository root; the packages are in their own directories.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node --test \"packages/proof-verify/test/*.test.js\""
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "60-embedded-key-inconsistent",
+  "title": "The embedded key W does not verify the signature (made with A): INVALID even without an independent key",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IkFMTCJ9LCJjbGFpbUlkIjoiY21tYy1sMi5pYS5tZmEtZW5yb2xsZWQiLCJjb250cm9scyI6W3siY29udHJvbElkIjoiSUEuTDItMy41LjMiLCJmcmFtZXdvcmsiOiJjbW1jLWwyIn0seyJjb250cm9sSWQiOiIzLjUuMyIsImZyYW1ld29yayI6Im5pc3QtODAwLTE3MS1yMiJ9XSwic3RhdGVtZW50IjoiRXZlcnkgYWN0aXZlIHVzZXIgYWNjb3VudCBpcyBlbnJvbGxlZCBpbiBtdWx0aS1mYWN0b3IgYXV0aGVudGljYXRpb24uIn0sImV2aWRlbmNlIjp7ImFsZ28iOiJzaGEyNTYtc2FsdGVkIiwiY29tbWl0bWVudCI6ImY3ZjgzZmU3MTMxYjVkMjNmNjZkZDAxYjVmNDRkZmQ5NTg1NTk5ZGMyZWJkNjUxZDJlODgzOGU1ZDQ3ZDE2ZjkifSwiZnJlc2hVbnRpbCI6IjIwMjYtMTAtMzFUMTE6MzA6MDAuMDAwWiIsImlzc3VlZEF0IjoiMjAyNi0xMC0wMVQxMjowMDowMC4wMDBaIiwiaXNzdWVyIjp7ImRlcGxveW1lbnQiOiJodHRwczovL2NtZGFzaC5leGFtcGxlIiwia2V5SWQiOiJjbWRhc2gtcHJvb2YtMDdiZjAxN2UxYTAzNzAyMyIsInRlbmFudFJlZiI6InRyXzczNTEzYTY5YTU0OWFkMjNiN2E5MDc1ZTk2MmY4ZTFlIn0sIm1lYXN1cmVtZW50Ijp7ImRlbm9taW5hdG9yIjoxMjgsIm1ldGhvZCI6eyJpZCI6ImlkZW50aXR5LWNvdmVyYWdlLm1mYS1lbnJvbGxlZCIsInZlcnNpb24iOjF9LCJudW1lcmF0b3IiOjEyOCwic2NvcGUiOnsiZGVzY3JpcHRpb24iOiJBY3RpdmUgdXNlciBhY2NvdW50cyBpbiB0aGUgY29ubmVjdGVkIGlkZW50aXR5IHByb3ZpZGVyIiwidW5pdCI6InVzZXIifSwidW5rbm93biI6MH0sIm9ic2VydmVkQXQiOiIyMDI2LTEwLTAxVDExOjMwOjAwLjAwMFoiLCJyZWNlaXB0SWQiOiIwMU0zVk5CV0cwS0Q1SEg4N0UxMlZHWkpKUSIsInNvdXJjZXMiOlt7ImtpbmQiOiJJTlRFR1JBVElPTiIsInJlZiI6Im9rdGEifV19",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-07bf017e1a037023",
+        "value": "6EyNx4PdMHXIr8O89DlOGqZWzzZXmPnBuySfr4YpvKzgePJlOzYxvheMO8rN-VxVwW8S_uhfQnwKoTG4kRviBw"
+      },
+      "issuerKey": {
+        "kid": "cmdash-proof-07bf017e1a037023",
+        "alg": "Ed25519",
+        "publicKey": "MCowBQYDK2VwAyEATZ66tz_U_MlcYKdiK2-y5IksyJUqQv603i6vPlZdQfk"
+      }
+    },
+    "trust": {
+      "now": "2026-10-12T00:00:00.000Z"
+    }
+  },
+  "expect": {
+    "verdict": "INVALID",
+    "failedCheck": "signature.verify",
+    "rule": "ed25519.mismatch",
+    "summaryPrefix": "INVALID",
+    "keySource": "EMBEDDED",
+    "keyStatusAsOf": null,
+    "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json",
+    "plainHttp": false,
+    "checks": [
+      {
+        "name": "envelope.json",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.version",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.shape",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.decode",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.canonical",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.schema",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.kid",
+        "outcome": "PASS"
+      },
+      {
+        "name": "issuer.key",
+        "outcome": "FAIL",
+        "effect": "UNVERIFIABLE"
+      },
+      {
+        "name": "signature.verify",
+        "outcome": "FAIL",
+        "effect": "INVALID"
+      },
+      {
+        "name": "log.inclusion",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.checkpoint",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.external",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key-status",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "payload.consistency",
+        "outcome": "PASS"
+      },
+      {
+        "name": "assertion.admissible",
+        "outcome": "PASS"
+      },
+      {
+        "name": "time.future",
+        "outcome": "PASS"
+      },
+      {
+        "name": "freshness",
+        "outcome": "PASS"
+      }
+    ],
+    "proves": [],
+    "doesNotProve": [],
+    "reading": null,
+    "schema": "accept",
+    "digest": "11466604b1e35ba233562b2fd15c6e92e7ced74bb72e3b45249d0a353eb082a5"
+  },
+  "payloadText": "{\"claim\":{\"assertion\":{\"kind\":\"ALL\"},\"claimId\":\"cmmc-l2.ia.mfa-enrolled\",\"controls\":[{\"controlId\":\"IA.L2-3.5.3\",\"framework\":\"cmmc-l2\"},{\"controlId\":\"3.5.3\",\"framework\":\"nist-800-171-r2\"}],\"statement\":\"Every active user account is enrolled in multi-factor authentication.\"},\"evidence\":{\"algo\":\"sha256-salted\",\"commitment\":\"f7f83fe7131b5d23f66dd01b5f44dfd9585599dc2ebd651d2e8838e5d47d16f9\"},\"freshUntil\":\"2026-10-31T11:30:00.000Z\",\"issuedAt\":\"2026-10-01T12:00:00.000Z\",\"issuer\":{\"deployment\":\"https://cmdash.example\",\"keyId\":\"cmdash-proof-07bf017e1a037023\",\"tenantRef\":\"tr_73513a69a549ad23b7a9075e962f8e1e\"},\"measurement\":{\"denominator\":128,\"method\":{\"id\":\"identity-coverage.mfa-enrolled\",\"version\":1},\"numerator\":128,\"scope\":{\"description\":\"Active user accounts in the connected identity provider\",\"unit\":\"user\"},\"unknown\":0},\"observedAt\":\"2026-10-01T11:30:00.000Z\",\"receiptId\":\"01M3VNBWG0KD5HH87E12VGZJJQ\",\"sources\":[{\"kind\":\"INTEGRATION\",\"ref\":\"okta\"}]}"
+}

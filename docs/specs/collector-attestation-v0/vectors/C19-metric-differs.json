@@ -1,0 +1,56 @@
+{
+  "id": "C19-metric-differs",
+  "title": "The collector signed mfa-enrolled with the same counts and instant; the receipt signs the edr-coverage method",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IlJBVElPIn0sImNsYWltSWQiOiJjb2xsZWN0b3ItYXR0ZXN0ZWQuc2kubWFsaWNpb3VzLWNvZGUtcHJvdGVjdGlvbiIsImNvbnRyb2xzIjpbeyJjb250cm9sSWQiOiJTSS5MMi0zLjE0LjIiLCJmcmFtZXdvcmsiOiJjbW1jLWwyIn1dLCJzdGF0ZW1lbnQiOiJSdW5zIGFuIGFjdGl2ZSBlbmRwb2ludC1kZXRlY3Rpb24gYWdlbnQ6IGhvc3RzIHRoZSBzdXBwbGllciBjb2xsZWN0b3IgcmVwb3J0ZWQuIn0sImV2aWRlbmNlIjp7ImFsZ28iOiJzaGEyNTYtc2FsdGVkIiwiY29tbWl0bWVudCI6ImEzN2UwMWExODYzZjE0ZGNlZjRlMDcyODBiZjE1MmJjM2RhODU1MGY2ZWIyYmM4M2ZjOWE0M2YzY2ZiYzI1ZTYifSwiZnJlc2hVbnRpbCI6IjIwMjYtMTAtMTVUMTE6MzA6MDAuMDAwWiIsImlzc3VlZEF0IjoiMjAyNi0xMC0wMVQxMjowMDowMC4wMDBaIiwiaXNzdWVyIjp7ImRlcGxveW1lbnQiOiJodHRwczovL2NtZGFzaC5leGFtcGxlIiwia2V5SWQiOiJjbWRhc2gtcHJvb2YtMzFlODc2NzQ4MWNiMWZmOCIsInRlbmFudFJlZiI6InRyXzczNTEzYTY5YTU0OWFkMjNiN2E5MDc1ZTk2MmY4ZTFlIn0sIm1lYXN1cmVtZW50Ijp7ImRlbm9taW5hdG9yIjo1MCwibWV0aG9kIjp7ImlkIjoiY29sbGVjdG9yLWF0dGVzdGVkLmVkci1jb3ZlcmFnZS52MSIsInZlcnNpb24iOjF9LCJudW1lcmF0b3IiOjQ3LCJzY29wZSI6eyJkZXNjcmlwdGlvbiI6Ikhvc3RzIHJldHVybmVkIGJ5IHRoZSBzdXBwbGllciBjb2xsZWN0b3IiLCJ1bml0IjoiaG9zdCJ9LCJ1bmtub3duIjoxfSwib2JzZXJ2ZWRBdCI6IjIwMjYtMTAtMDFUMTE6MzA6MDAuMDAwWiIsInJlY2VpcHRJZCI6IjAxTTNWTkJXRzBXMUY1WUVSV0EySkY5WURZIiwic291cmNlcyI6W3sia2luZCI6IkNPTExFQ1RPUiIsInJlZiI6ImNtZGFzaC1jb2xsZWN0b3ItOGQ3NDMwNDIwYzE5ZjhkNyJ9XX0",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-31e8767481cb1ff8",
+        "value": "FLe53ppYfhknKVVlwuUXdJ0iN9adCNpi5A6Qf2JSMzxk78TbTa6yDvBTxpP5p_N3L90yNtpEDamRs4z9b0EaCw"
+      }
+    },
+    "attestation": {
+      "format": "cmdash-collector-attestation",
+      "v": 0,
+      "collectorKey": {
+        "kid": "cmdash-collector-8d7430420c19f8d7",
+        "alg": "Ed25519",
+        "publicKey": "MCowBQYDK2VwAyEAA1ZUGAvwvl0DZOn3uRBsOHOBuWbOl39WbgowiF73iXw"
+      },
+      "statement": "eyJjb2xsZWN0b3JLZXlJZCI6ImNtZGFzaC1jb2xsZWN0b3ItOGQ3NDMwNDIwYzE5ZjhkNyIsImRlbm9taW5hdG9yIjo1MCwiZGVwbG95bWVudCI6Imh0dHBzOi8vY21kYXNoLmV4YW1wbGUiLCJtZWFzdXJlZEF0IjoiMjAyNi0xMC0wMVQxMTozMDowMC4wMDBaIiwibWV0cmljIjoibWZhLWVucm9sbGVkIiwibm9uY2UiOiIwMDExMjIzMzQ0NTU2Njc3ODg5OWFhYmJjY2RkZWVmZiIsIm51bWVyYXRvciI6NDcsInNlcSI6MTc5MDAwMDAwMDAwMCwidGVuYW50UmVmIjoidHJfNzM1MTNhNjlhNTQ5YWQyM2I3YTkwNzVlOTYyZjhlMWUiLCJ1bmtub3duIjoxLCJ2IjowfQ",
+      "sig": "n0TlHROaTCrAeCQFFapHdNgrOSmYJzQkBbq2ogtM-TypQ-DTg-udhj3fk6eoY1hUIBioqE5CP6XnR3LCPefLCA"
+    },
+    "trust": {
+      "collectorKeys": [
+        {
+          "deployment": "https://cmdash.example",
+          "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+          "publicKey": "MCowBQYDK2VwAyEAA1ZUGAvwvl0DZOn3uRBsOHOBuWbOl39WbgowiF73iXw"
+        }
+      ]
+    },
+    "receiptTrust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "publicKeys": [
+        {
+          "deployment": "https://cmdash.example",
+          "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+          "publicKey": "MCowBQYDK2VwAyEA6p4hNds-WExKb-croy_F7biS4c4oh7SlDnV6PNPOufc"
+        }
+      ]
+    }
+  },
+  "expect": {
+    "status": "MISMATCH",
+    "rule": "collector.metric",
+    "keySource": null,
+    "revokedAt": null,
+    "proves": [],
+    "doesNotProve": []
+  },
+  "receiptExpect": {
+    "verdict": "VALID"
+  }
+}

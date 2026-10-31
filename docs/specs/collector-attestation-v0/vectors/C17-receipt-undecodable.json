@@ -1,0 +1,47 @@
+{
+  "id": "C17-receipt-undecodable",
+  "title": "The receipt fails its structural checks",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "AA",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-31e8767481cb1ff8",
+        "value": "FLe53ppYfhknKVVlwuUXdJ0iN9adCNpi5A6Qf2JSMzxk78TbTa6yDvBTxpP5p_N3L90yNtpEDamRs4z9b0EaCw"
+      }
+    },
+    "attestation": {
+      "format": "cmdash-collector-attestation",
+      "v": 0,
+      "collectorKey": {
+        "kid": "cmdash-collector-8d7430420c19f8d7",
+        "alg": "Ed25519",
+        "publicKey": "MCowBQYDK2VwAyEAA1ZUGAvwvl0DZOn3uRBsOHOBuWbOl39WbgowiF73iXw"
+      },
+      "statement": "eyJjb2xsZWN0b3JLZXlJZCI6ImNtZGFzaC1jb2xsZWN0b3ItOGQ3NDMwNDIwYzE5ZjhkNyIsImRlbm9taW5hdG9yIjo1MCwiZGVwbG95bWVudCI6Imh0dHBzOi8vY21kYXNoLmV4YW1wbGUiLCJtZWFzdXJlZEF0IjoiMjAyNi0xMC0wMVQxMTozMDowMC4wMDBaIiwibWV0cmljIjoiZWRyLWNvdmVyYWdlIiwibm9uY2UiOiIwMDExMjIzMzQ0NTU2Njc3ODg5OWFhYmJjY2RkZWVmZiIsIm51bWVyYXRvciI6NDcsInNlcSI6MTc5MDAwMDAwMDAwMCwidGVuYW50UmVmIjoidHJfNzM1MTNhNjlhNTQ5YWQyM2I3YTkwNzVlOTYyZjhlMWUiLCJ1bmtub3duIjoxLCJ2IjowfQ",
+      "sig": "2jRBKJvTOHkIgK7OOmo0xfx-cW41sfRzMeHWOvOjZFE7Dt9FM3cTvpwWG5jUrlTK-2exT4zN0Le2nvRB4gKUAg"
+    },
+    "receiptTrust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "publicKeys": [
+        {
+          "deployment": "https://cmdash.example",
+          "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+          "publicKey": "MCowBQYDK2VwAyEA6p4hNds-WExKb-croy_F7biS4c4oh7SlDnV6PNPOufc"
+        }
+      ]
+    }
+  },
+  "expect": {
+    "status": "MISMATCH",
+    "rule": "collector.receipt-undecodable",
+    "keySource": null,
+    "revokedAt": null,
+    "proves": [],
+    "doesNotProve": []
+  },
+  "receiptExpect": {
+    "verdict": "INVALID"
+  }
+}

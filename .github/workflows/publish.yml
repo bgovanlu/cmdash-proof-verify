@@ -1,0 +1,56 @@
+name: Publish
+
+# INERT until the owner adds an NPM_TOKEN repository secret and sets "private": false in the package.json of each package to publish.
+# A v* tag pushed before then runs the tests, publishes nothing and exits 0 with a notice.
+on:
+  push:
+    tags:
+      - 'v*'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  id-token: write # npm provenance
+  contents: read
+
+jobs:
+  publish:
+    name: Test and publish
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN_SET: ${{ secrets.NPM_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      - name: Test
+        working-directory: packages/proof-verify
+        run: node --test "test/*.test.js"
+      - name: Verify the tag matches the version
+        run: |
+          set -euo pipefail
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          PKG_VERSION="$(node -p "require('./packages/proof-verify/package.json').version")"
+          if [[ "$TAG_VERSION" != "$PKG_VERSION" ]]; then
+            echo "::error::Tag ${GITHUB_REF_NAME} implies $TAG_VERSION, but packages/proof-verify/package.json has $PKG_VERSION." >&2
+            exit 1
+          fi
+      - name: Publish packages/proof-verify
+        if: env.NPM_TOKEN_SET == 'true'
+        working-directory: packages/proof-verify
+        run: |
+          set -euo pipefail
+          if [[ "$(node -p "require('./package.json').private === true")" == "true" ]]; then
+            echo "::notice::packages/proof-verify still has private: true. Nothing was published."
+            exit 0
+          fi
+          npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: NPM_TOKEN not configured - skipping publish
+        if: env.NPM_TOKEN_SET != 'true'
+        run: echo "::notice::NPM_TOKEN is not set, so ${GITHUB_REF_NAME} was tested but NOT published."

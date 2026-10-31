@@ -1,0 +1,160 @@
+{
+  "id": "85-issuer-identity-includes-deployment",
+  "title": "A receipt that honestly names https://evil.example, verified by a relying party that chose to trust that deployment: VALID for tenant A's tenantRef AT evil.example, which is not supplier A",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IkFMTCJ9LCJjbGFpbUlkIjoiY21tYy1sMi5pYS5tZmEtZW5yb2xsZWQiLCJjb250cm9scyI6W3siY29udHJvbElkIjoiSUEuTDItMy41LjMiLCJmcmFtZXdvcmsiOiJjbW1jLWwyIn0seyJjb250cm9sSWQiOiIzLjUuMyIsImZyYW1ld29yayI6Im5pc3QtODAwLTE3MS1yMiJ9XSwic3RhdGVtZW50IjoiRXZlcnkgYWN0aXZlIHVzZXIgYWNjb3VudCBpcyBlbnJvbGxlZCBpbiBtdWx0aS1mYWN0b3IgYXV0aGVudGljYXRpb24uIn0sImV2aWRlbmNlIjp7ImFsZ28iOiJzaGEyNTYtc2FsdGVkIiwiY29tbWl0bWVudCI6ImNmOTU0ZDQzMTU4YTg1ZDUzNWY0YmYxYmZmZjkzNzFjNjJjNDdmNTZlOTY5YWU2Nzg1NTlkYmQ2NGFiODZiMDIifSwiZnJlc2hVbnRpbCI6IjIwMjYtMTAtMzFUMTE6MzA6MDAuMDAwWiIsImlzc3VlZEF0IjoiMjAyNi0xMC0wMVQxMjowMDowMC4wMDBaIiwiaXNzdWVyIjp7ImRlcGxveW1lbnQiOiJodHRwczovL2V2aWwuZXhhbXBsZSIsImtleUlkIjoiY21kYXNoLXByb29mLTBhYzgwNGYxMTVlNDk3ZGQiLCJ0ZW5hbnRSZWYiOiJ0cl83MzUxM2E2OWE1NDlhZDIzYjdhOTA3NWU5NjJmOGUxZSJ9LCJtZWFzdXJlbWVudCI6eyJkZW5vbWluYXRvciI6MTI4LCJtZXRob2QiOnsiaWQiOiJpZGVudGl0eS1jb3ZlcmFnZS5tZmEtZW5yb2xsZWQiLCJ2ZXJzaW9uIjoxfSwibnVtZXJhdG9yIjoxMjgsInNjb3BlIjp7ImRlc2NyaXB0aW9uIjoiQWN0aXZlIHVzZXIgYWNjb3VudHMgaW4gdGhlIGNvbm5lY3RlZCBpZGVudGl0eSBwcm92aWRlciIsInVuaXQiOiJ1c2VyIn0sInVua25vd24iOjB9LCJvYnNlcnZlZEF0IjoiMjAyNi0xMC0wMVQxMTozMDowMC4wMDBaIiwicmVjZWlwdElkIjoiMDFNM1ZOQldHMFNBME1BMUFDMUc2NUE1TkQiLCJzb3VyY2VzIjpbeyJraW5kIjoiSU5URUdSQVRJT04iLCJyZWYiOiJva3RhIn1dfQ",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-0ac804f115e497dd",
+        "value": "0G-ldbe_E1lXvjukqFnp2yCEeS3Cf3WbFk3OM0M8ejaSAb25xA0hcNwOaRkM9tAu73ItlTtO9BtV9ZXY_szXCw"
+      }
+    },
+    "trust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "deployments": [
+        "https://evil.example"
+      ],
+      "keyDocument": {
+        "format": "cmdash-proof-keys",
+        "v": 0,
+        "deployment": "https://evil.example",
+        "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+        "generatedAt": "2026-10-12T00:00:00.000Z",
+        "keys": [
+          {
+            "kid": "cmdash-proof-0ac804f115e497dd",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAeA1ma9UiQDpXLDNLTlEi6RsvaT_Nc5ik2eQZ1N4lki8",
+            "status": "ACTIVE",
+            "validFrom": "2026-09-01T00:00:00.000Z"
+          }
+        ],
+        "log": {
+          "format": "cmdash-proof-log-keys",
+          "v": 0,
+          "generatedAt": "2026-10-12T00:00:00.000Z",
+          "origin": "cmdash.example/cmdash-proof-log",
+          "keys": [
+            {
+              "kid": "cmdash-proof-log-aba8e87dc4aed5e8",
+              "alg": "Ed25519",
+              "publicKey": "MCowBQYDK2VwAyEAr7oBOjWCkgkuFF08g3JEM_1wKb1WxP0LD4EBQMDF_-k",
+              "status": "ACTIVE",
+              "validFrom": "2026-09-01T00:00:00.000Z"
+            }
+          ]
+        }
+      },
+      "keyDocumentUrl": "https://evil.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json"
+    }
+  },
+  "expect": {
+    "verdict": "VALID",
+    "failedCheck": null,
+    "rule": null,
+    "summaryPrefix": "VALID",
+    "keySource": "KEY_DOCUMENT",
+    "keyStatusAsOf": "2026-10-12T00:00:00.000Z",
+    "keyDocumentUrl": "https://evil.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json",
+    "plainHttp": false,
+    "checks": [
+      {
+        "name": "envelope.json",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.version",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.shape",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.decode",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.canonical",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.schema",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.kid",
+        "outcome": "PASS"
+      },
+      {
+        "name": "issuer.key",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.verify",
+        "outcome": "PASS"
+      },
+      {
+        "name": "log.inclusion",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.checkpoint",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.external",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key-status",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.consistency",
+        "outcome": "PASS"
+      },
+      {
+        "name": "assertion.admissible",
+        "outcome": "PASS"
+      },
+      {
+        "name": "time.future",
+        "outcome": "PASS"
+      },
+      {
+        "name": "freshness",
+        "outcome": "PASS"
+      }
+    ],
+    "proves": [
+      "signed-by-key",
+      "issuer-key-published",
+      "unaltered",
+      "observed-at",
+      "measurement-stated",
+      "fresh"
+    ],
+    "doesNotProve": [
+      "source-truth",
+      "scope-completeness",
+      "control-effectiveness",
+      "not-superseded",
+      "not-logged"
+    ],
+    "reading": {
+      "kind": "ALL",
+      "basis": "MEASURED",
+      "unit": "user",
+      "numerator": 128,
+      "denominator": 128,
+      "unknown": 0,
+      "percent": "100.00"
+    },
+    "schema": "accept",
+    "digest": "f9186b71fbed050c1ae2fdd83a61a7786d695a42e42e6a88072e3909bc6f2df6"
+  },
+  "payloadText": "{\"claim\":{\"assertion\":{\"kind\":\"ALL\"},\"claimId\":\"cmmc-l2.ia.mfa-enrolled\",\"controls\":[{\"controlId\":\"IA.L2-3.5.3\",\"framework\":\"cmmc-l2\"},{\"controlId\":\"3.5.3\",\"framework\":\"nist-800-171-r2\"}],\"statement\":\"Every active user account is enrolled in multi-factor authentication.\"},\"evidence\":{\"algo\":\"sha256-salted\",\"commitment\":\"cf954d43158a85d535f4bf1bfff9371c62c47f56e969ae678559dbd64ab86b02\"},\"freshUntil\":\"2026-10-31T11:30:00.000Z\",\"issuedAt\":\"2026-10-01T12:00:00.000Z\",\"issuer\":{\"deployment\":\"https://evil.example\",\"keyId\":\"cmdash-proof-0ac804f115e497dd\",\"tenantRef\":\"tr_73513a69a549ad23b7a9075e962f8e1e\"},\"measurement\":{\"denominator\":128,\"method\":{\"id\":\"identity-coverage.mfa-enrolled\",\"version\":1},\"numerator\":128,\"scope\":{\"description\":\"Active user accounts in the connected identity provider\",\"unit\":\"user\"},\"unknown\":0},\"observedAt\":\"2026-10-01T11:30:00.000Z\",\"receiptId\":\"01M3VNBWG0SA0MA1AC1G65A5ND\",\"sources\":[{\"kind\":\"INTEGRATION\",\"ref\":\"okta\"}]}"
+}

@@ -1,0 +1,677 @@
+{
+  "id": "96-key-document-65-keys",
+  "title": "A key document listing 65 keys (the cap is 1024): the 65th key must not break every receipt",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IkFMTCJ9LCJjbGFpbUlkIjoiY21tYy1sMi5pYS5tZmEtZW5yb2xsZWQiLCJjb250cm9scyI6W3siY29udHJvbElkIjoiSUEuTDItMy41LjMiLCJmcmFtZXdvcmsiOiJjbW1jLWwyIn0seyJjb250cm9sSWQiOiIzLjUuMyIsImZyYW1ld29yayI6Im5pc3QtODAwLTE3MS1yMiJ9XSwic3RhdGVtZW50IjoiRXZlcnkgYWN0aXZlIHVzZXIgYWNjb3VudCBpcyBlbnJvbGxlZCBpbiBtdWx0aS1mYWN0b3IgYXV0aGVudGljYXRpb24uIn0sImV2aWRlbmNlIjp7ImFsZ28iOiJzaGEyNTYtc2FsdGVkIiwiY29tbWl0bWVudCI6ImQ4ZDU2MjhlY2JkOGE2YWE2OTdjYTE5YzZjN2FjMWJkNDFhODZkZWMzZjFmYjYwZmFjYTk4OTczMTJhNDhkNWIifSwiZnJlc2hVbnRpbCI6IjIwMjYtMTAtMzFUMTE6MzA6MDAuMDAwWiIsImlzc3VlZEF0IjoiMjAyNi0xMC0wMVQxMjowMDowMC4wMDBaIiwiaXNzdWVyIjp7ImRlcGxveW1lbnQiOiJodHRwczovL2NtZGFzaC5leGFtcGxlIiwia2V5SWQiOiJjbWRhc2gtcHJvb2YtNmIxZTc5YTcwZTc3NzY3NiIsInRlbmFudFJlZiI6InRyXzczNTEzYTY5YTU0OWFkMjNiN2E5MDc1ZTk2MmY4ZTFlIn0sIm1lYXN1cmVtZW50Ijp7ImRlbm9taW5hdG9yIjoxMjgsIm1ldGhvZCI6eyJpZCI6ImlkZW50aXR5LWNvdmVyYWdlLm1mYS1lbnJvbGxlZCIsInZlcnNpb24iOjF9LCJudW1lcmF0b3IiOjEyOCwic2NvcGUiOnsiZGVzY3JpcHRpb24iOiJBY3RpdmUgdXNlciBhY2NvdW50cyBpbiB0aGUgY29ubmVjdGVkIGlkZW50aXR5IHByb3ZpZGVyIiwidW5pdCI6InVzZXIifSwidW5rbm93biI6MH0sIm9ic2VydmVkQXQiOiIyMDI2LTEwLTAxVDExOjMwOjAwLjAwMFoiLCJyZWNlaXB0SWQiOiIwMU0zVk5CV0cwRjFCNjc3NkNIUlJEOUpWRSIsInNvdXJjZXMiOlt7ImtpbmQiOiJJTlRFR1JBVElPTiIsInJlZiI6Im9rdGEifV19",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-6b1e79a70e777676",
+        "value": "qaOn8I0Yre3A5Aj7M7DiDTxB6RjZFA_q7X7WFWHS8-xNaNinZfdHW6pZIgZamBrHb1jFiQSCoZmVaCKBSy12Dg"
+      }
+    },
+    "trust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "keyDocument": {
+        "format": "cmdash-proof-keys",
+        "v": 0,
+        "deployment": "https://cmdash.example",
+        "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+        "generatedAt": "2026-10-12T00:00:00.000Z",
+        "keys": [
+          {
+            "kid": "cmdash-proof-6b1e79a70e777676",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA5e-49s4AgO5sNiPLdEcCmPf5zLi_YzgegW2YxY0u4ww",
+            "status": "ACTIVE",
+            "validFrom": "2026-09-01T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-49cc0a17962bf560",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAtdR3vb8HWTIQo1mK4D_AEZxCTcK9YTVtKW98V3gMQNU",
+            "status": "RETIRED",
+            "validFrom": "2026-06-01T00:00:00.000Z",
+            "validUntil": "2026-09-01T00:00:00.000Z",
+            "lastTreeSize": 6
+          },
+          {
+            "kid": "cmdash-proof-93b3543cd9195d0a",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAMmkfkHGC2bicW-7GnHYbV9PE7oCkBos3KPB2ZlvdGXE",
+            "status": "REVOKED",
+            "validFrom": "2026-03-01T00:00:00.000Z",
+            "validUntil": "2026-06-01T00:00:00.000Z",
+            "revokedAt": "2026-09-15T00:00:00.000Z",
+            "revocationReason": "KEY_COMPROMISE"
+          },
+          {
+            "kid": "cmdash-proof-6f46ab5f22c8732d",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOBX4MjLWRNNan3MkMhovXprFDh0ZS1_yDoOMn-1wrQo",
+            "status": "REVOKED",
+            "validFrom": "2026-01-01T00:00:00.000Z",
+            "revokedAt": "2026-03-01T00:00:00.000Z",
+            "revocationReason": "ISSUER_REQUEST",
+            "lastTreeSize": 2
+          },
+          {
+            "kid": "cmdash-proof-af9ed561c2be7e23",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEARv5GhEGsxZ78zb2JYRL6-uF9dZXzBlCTOXzVI9XU_EY",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-c447f302168e3d23",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAXtiT69onWwRIV4F3CLbsPH4fy2xrpsEdEIssRtgexk0",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-ff03a6d93b366f08",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOXunZdfEihFfuY68FtT6E-00Jy5MOfG6Z4XaLM5bRt0",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-bbbe0660caac76ef",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAMJRH4FaM_Qpems7rH1Oqr69A-cYWq6-0ktd1CMN787I",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-b469e81cd285bf3c",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAjTueO_TE3uCeb6vpdTuZSfXaxjhzFRL3_wnpkpCJly8",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-f9069b9bee6134be",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAuWaXM020seCDiKSCOac9tUO1_lrCoti7Y6_5rkc2l00",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-8fd6f52b7b588cd3",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAv6T1r-mRA4jG5wGsdf71OYi5P_9xqVR3owRH5rR3u98",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-bfe5a01c361aa5ff",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA9ZBn97LYXr0Q_S7M6puT_MXZ-PyIoaTQZMNfhP0i5wI",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-2a7d5638afc55788",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAcbgvjzP8exCuUY1qZm7N9G2QTRyo3wFJh1mUvy-Pz1o",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-27206e1bcff4a9f4",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAyt1cuqhAPipoNjh3hhSVupoQsNGTO_X62B4xUvEgstk",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-7663a58a161f081e",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAUeGY18B4XsqR22tT13spAzR8XYsMOv4EUOf3yBukPMw",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-a5dcfee9a6e184c6",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAHMRwUo-AIZQp-A1s6TfuJXuVvsrig7wMRJLv76gv44I",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-a31ce473889259b3",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAZMxGB4w_9zPjBkjwlQGtKd1U8LoUDDDK8Ly-ZW4xiZY",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-76392ca68f60108c",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAcM4ui4-HtG7VclVlY89pnhO5115RmKy-8A583-UmwKY",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-1191d57f7c28f7cf",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAHkPXG4gd5E9gcCMGTOahBX5Hk9Hi9MVgsPOcc3z5cHM",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-09aa77adccc733b9",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAJSOK4blNuuwvbJ-ZPmX95OWlvJCjaWuraVmbcwAPl4E",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-5be1d6686429184f",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAvVEAwNeqo93qj6P0YEws1g9d5xrPVejTcErwWEI44B0",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-7a1a901dfddcb316",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAYJ-X888qUHEMFizvCtFq6Nv4VDzM-fVtt9L3Y6aVMI4",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-87869b035cbe4826",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAncxVQ7-t7FfcnbbxwtBNBbA5yqHv95QKAE9AVnC4Gaw",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-210a2be28a876197",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAyPGfKejI2BIjCFyHIXuE3qioXqlmXwE0LOHiJcouYL0",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-7afe3b4351faab97",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEABSNmeNVMH711xyIoMbFM5Ec6DahF9mhRlX5sjMJKNw8",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-e084f717675ee585",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAuqDyiWDS8deqN_0f9ydKCClDaENRBJjfgnLq8BpRj3M",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-404caa8d73605b5a",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA3RCpbxgOWvK_C8L_RCphcyD9y72Z2BLJ6ZkhGNMjlAU",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-5caa03cec0020a70",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAUwzFcRJaj90ovNqRB2deC94FOFdpt4X-bYHI1WAz2zU",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-9a89523b76fbcd66",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA6LNVg4vE5RJTzJn6kShq7i5q-eX4wmDTVWKW0JMM7uw",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-00587647e2f64ee8",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAomX0o2wcbFMkg_tGKBZEUYXp4lbxo7yKszLA5m-WkmY",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-723d76f3fe259718",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAa1E2n4CEZJf9PQfXegT5js2civWWhWS5DR7X-dHT-ac",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-1114793248dd446e",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA-80VnbLh7Z9mDRADyU0Bo16cL_h8n9zSSsp3TeBCD3s",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-0a5cc0cb25ac6179",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAFiUV9GND9MTpOK1Z4kvJLpWqH0-c8q1-t3FSgUa6IDw",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-27d41758a55167d2",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAHT3dqLi04Cy5CSC9TWteoVSEuUNJqfy3f_dnPJ-cuR8",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-6b30f4249a9f220d",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAl602OKkD1wInTg498iPGlAW-4GqQjhHCDz0Af5S4VXA",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-bb03e238f8a2922e",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEACJ9_pYeyjNv0bXf4sxgdZKXc-zRfY66cQHSRBYdb6YQ",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-0a64812e41a3d493",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAAxDDLmBvX9WF3B5mFd-Ok9yS1zAV6IhzpN_WLiS1RPM",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-c99b6d11fcd5f1d6",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA_CLJiwVlFQ1IgKX3xMUFJ0ebNDmXoKrNk6dViKnB8a8",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-a3fd3bba784cfcb6",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAhobammZMASbGuVMLBj0cvS4QFoQqWUpITZ5dVR3eqSI",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-5440b7a753665690",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAd5FfhQz-7Fl3RAbxFj7ayr3jJQbYMV9yIbX3yBl0TxM",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-76c57fd9f7982200",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAdO5bKYc7MCeIGZ-6yFv5NAJSmtF53lZ3_DPC5ZvATvs",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-0fe670f16604cfba",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAwoC4mR8MH1LfkWnbLQjqmXlKuAlNJrHNf1nLCLw5dgg",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-4ba6dbfb9d1df20a",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAi4sItc3SlgDx6_yaaXjnD5KwKeNNwUb2tAKm-TYgXRk",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-b60ee7ef1346b3d3",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA8lh8JubaMrhvkdmJBrnFdhN1_9VqaApVljfIYAAiTgg",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-bd6b3116fb6620f2",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAi42t42suNWKJGqW7o5VIo9z50_qhs1Qp36nfH_xo4Fc",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-80a6d083f2eaf551",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOWefx-rldbAed6c1O4hqoFTG0Yp1v9iXM32rQ0GXhhE",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-2420333eef5621b3",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAesOzIqa76VxM0OAJh_6G7thLAmM2zFL4plBZFrKP8M4",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-a92b301244794449",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA_XVICfQgA-AHA-pGkZTCClm7FfbTCs6qNac2bvbGMvw",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-79259caabe1dd3d7",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAbvFzVuPr0ZajJa-WiGfiwMbPDUcfeVkNSQNWXxDJ3n0",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-a7befa5f07630a09",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAboUGfFGGkXgDhLDcJb1oqUXe3fKeP8syhYd8lr60s7s",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-dbfb9cf39e703213",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAoW-nVSyENjVzfTSSaACEB6xw1sCsteC_l6fhyY-P1fg",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-20240503b5bfc340",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAvI4IUtfCrLCG-PCXn7jAr26AcHZaD34bklktdH-iXVA",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-96bc9ad6c597e16c",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAfX40O7RudkME-An5Lde-sIjh3dxH4uLyoAYgwtxIaSc",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-7d868a3049dd0330",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA-OAX7mT8xWVp3sADCZRrJwoxgO_hOYapw2kDS_5gIrg",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-c8c81dacf43e9552",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEATg1t5_WogVaAM-A2fnqhkdV-ruZ0K5-stJLkvGGwQsA",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-0a2e14fb0f9271de",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA7UabzV5EivALn3Ekjl3RDdtf0IE3oQ8eWoAARKTJHZs",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-cfb3e18d5974c824",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA0X18nLjeQUVZt2edIJFJn7BhirnZD-71zhviCTmbfmc",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-2ac9baea1433a404",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOXt5s0w4xwqKg5F-B6PlOdB7YFTY2IplZ3CKF3c_eCA",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-9f77ec49d07b17a3",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAGkSZUFdHidDE4tkNIMo0H6LROpX31PiOpp7nWsovcG4",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-e0af5c22ca94d9d8",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAHxulvZtXdjbUtww-Ch2cEvOr09XiTJQKKL57lTcW8P8",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-2257622f8269de41",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAm2EzGFwvV37APSKfmojeKY1YHYENSqKDiRFucfIOwY4",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-f4d1560cadd7d894",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA3Yu5sloRal4bHK__yYDC6---OQ0IYsEVPDKPRomQIFE",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-fa633eb8afff4672",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAhgneFiLyrF0yCo3MchhUdMqvZ6Hj8biZxCMArdRakYM",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-99c432e8a4b2b80b",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAG1sNiJOG7_08hBf4oOkNNe1abFTS3JduQcXy1nWsfuQ",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-cc67d11ff0135b74",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAxXAPKAu1F2-KEZEVeracQDfOGl4bwaZqphex7gUhhoE",
+            "status": "RETIRED",
+            "validFrom": "2025-01-01T00:00:00.000Z",
+            "validUntil": "2025-01-02T00:00:00.000Z"
+          }
+        ],
+        "log": {
+          "format": "cmdash-proof-log-keys",
+          "v": 0,
+          "generatedAt": "2026-10-12T00:00:00.000Z",
+          "origin": "cmdash.example/cmdash-proof-log",
+          "keys": [
+            {
+              "kid": "cmdash-proof-log-aba8e87dc4aed5e8",
+              "alg": "Ed25519",
+              "publicKey": "MCowBQYDK2VwAyEAr7oBOjWCkgkuFF08g3JEM_1wKb1WxP0LD4EBQMDF_-k",
+              "status": "ACTIVE",
+              "validFrom": "2026-09-01T00:00:00.000Z"
+            }
+          ]
+        }
+      },
+      "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json",
+      "deployments": [
+        "https://cmdash.example"
+      ]
+    }
+  },
+  "expect": {
+    "verdict": "VALID",
+    "failedCheck": null,
+    "rule": null,
+    "summaryPrefix": "VALID",
+    "keySource": "KEY_DOCUMENT",
+    "keyStatusAsOf": "2026-10-12T00:00:00.000Z",
+    "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json",
+    "plainHttp": false,
+    "checks": [
+      {
+        "name": "envelope.json",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.version",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.shape",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.decode",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.canonical",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.schema",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.kid",
+        "outcome": "PASS"
+      },
+      {
+        "name": "issuer.key",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.verify",
+        "outcome": "PASS"
+      },
+      {
+        "name": "log.inclusion",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.checkpoint",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.external",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key-status",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.consistency",
+        "outcome": "PASS"
+      },
+      {
+        "name": "assertion.admissible",
+        "outcome": "PASS"
+      },
+      {
+        "name": "time.future",
+        "outcome": "PASS"
+      },
+      {
+        "name": "freshness",
+        "outcome": "PASS"
+      }
+    ],
+    "proves": [
+      "signed-by-key",
+      "issuer-key-published",
+      "unaltered",
+      "observed-at",
+      "measurement-stated",
+      "fresh"
+    ],
+    "doesNotProve": [
+      "source-truth",
+      "scope-completeness",
+      "control-effectiveness",
+      "not-superseded",
+      "not-logged"
+    ],
+    "reading": {
+      "kind": "ALL",
+      "basis": "MEASURED",
+      "unit": "user",
+      "numerator": 128,
+      "denominator": 128,
+      "unknown": 0,
+      "percent": "100.00"
+    },
+    "schema": "accept",
+    "digest": "028bac94c9656361ac8b5837f4e58bb78b3d6d6048f82844a79de0d054bb9abf"
+  },
+  "payloadText": "{\"claim\":{\"assertion\":{\"kind\":\"ALL\"},\"claimId\":\"cmmc-l2.ia.mfa-enrolled\",\"controls\":[{\"controlId\":\"IA.L2-3.5.3\",\"framework\":\"cmmc-l2\"},{\"controlId\":\"3.5.3\",\"framework\":\"nist-800-171-r2\"}],\"statement\":\"Every active user account is enrolled in multi-factor authentication.\"},\"evidence\":{\"algo\":\"sha256-salted\",\"commitment\":\"d8d5628ecbd8a6aa697ca19c6c7ac1bd41a86dec3f1fb60faca9897312a48d5b\"},\"freshUntil\":\"2026-10-31T11:30:00.000Z\",\"issuedAt\":\"2026-10-01T12:00:00.000Z\",\"issuer\":{\"deployment\":\"https://cmdash.example\",\"keyId\":\"cmdash-proof-6b1e79a70e777676\",\"tenantRef\":\"tr_73513a69a549ad23b7a9075e962f8e1e\"},\"measurement\":{\"denominator\":128,\"method\":{\"id\":\"identity-coverage.mfa-enrolled\",\"version\":1},\"numerator\":128,\"scope\":{\"description\":\"Active user accounts in the connected identity provider\",\"unit\":\"user\"},\"unknown\":0},\"observedAt\":\"2026-10-01T11:30:00.000Z\",\"receiptId\":\"01M3VNBWG0F1B6776CHRRD9JVE\",\"sources\":[{\"kind\":\"INTEGRATION\",\"ref\":\"okta\"}]}"
+}

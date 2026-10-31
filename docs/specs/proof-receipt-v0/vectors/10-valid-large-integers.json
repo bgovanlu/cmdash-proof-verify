@@ -1,0 +1,189 @@
+{
+  "id": "10-valid-large-integers",
+  "title": "Counts at the 10^9 ceiling; the derived percentage truncates to 99.99, never rounds to 100.00",
+  "input": {
+    "receipt": {
+      "v": 0,
+      "payload": "eyJjbGFpbSI6eyJhc3NlcnRpb24iOnsia2luZCI6IlJBVElPIn0sImNsYWltSWQiOiJzaWVtLmVuZHBvaW50LWV2ZW50cy1mb3J3YXJkZWQiLCJjb250cm9scyI6W3siY29udHJvbElkIjoiQVUuTDItMy4zLjEiLCJmcmFtZXdvcmsiOiJjbW1jLWwyIn1dLCJzdGF0ZW1lbnQiOiJFbmRwb2ludCBldmVudHMgZm9yd2FyZGVkIHRvIHRoZSBTSUVNIGluIHRoZSBsYXN0IDI0IGhvdXJzLiJ9LCJldmlkZW5jZSI6eyJhbGdvIjoic2hhMjU2LXNhbHRlZCIsImNvbW1pdG1lbnQiOiJlMTdhMWFmYTZhMmVlM2RkZjViMWQ0NTRlODgzYzMwNzFiNGU5Yzk4ODFhYzNkMDVkNzY5OGQ3ZGE0MDcyYWI3In0sImZyZXNoVW50aWwiOiIyMDI2LTEwLTMxVDExOjMwOjAwLjAwMFoiLCJpc3N1ZWRBdCI6IjIwMjYtMTAtMDFUMTI6MDA6MDAuMDAwWiIsImlzc3VlciI6eyJkZXBsb3ltZW50IjoiaHR0cHM6Ly9jbWRhc2guZXhhbXBsZSIsImtleUlkIjoiY21kYXNoLXByb29mLTZiMWU3OWE3MGU3Nzc2NzYiLCJ0ZW5hbnRSZWYiOiJ0cl83MzUxM2E2OWE1NDlhZDIzYjdhOTA3NWU5NjJmOGUxZSJ9LCJtZWFzdXJlbWVudCI6eyJkZW5vbWluYXRvciI6MTAwMDAwMDAwMCwibWV0aG9kIjp7ImlkIjoic2llbS5mb3J3YXJkaW5nIiwidmVyc2lvbiI6M30sIm51bWVyYXRvciI6OTk5OTk5OTk4LCJzY29wZSI6eyJkZXNjcmlwdGlvbiI6IkVuZHBvaW50IHRlbGVtZXRyeSBldmVudHMgaW4gdGhlIHdpbmRvdyIsInVuaXQiOiJldmVudCJ9LCJ1bmtub3duIjoxfSwib2JzZXJ2ZWRBdCI6IjIwMjYtMTAtMDFUMTE6MzA6MDAuMDAwWiIsInJlY2VpcHRJZCI6IjAxTTNWTkJXRzAxN0Y1WjZXWkM2QVAzUkFHIiwic291cmNlcyI6W3sia2luZCI6IklOVEVHUkFUSU9OIiwicmVmIjoib2t0YSJ9XX0",
+      "sig": {
+        "alg": "Ed25519",
+        "kid": "cmdash-proof-6b1e79a70e777676",
+        "value": "4efAIBeki4XzqfJypK7r6pp-Rf43CcNInGgWgur9y-DOFoVlMhPF1L9hNovp_tqwHg1aHKQxbaF8LZjuDOBxAQ"
+      }
+    },
+    "trust": {
+      "now": "2026-10-12T00:00:00.000Z",
+      "deployments": [
+        "https://cmdash.example"
+      ],
+      "keyDocument": {
+        "format": "cmdash-proof-keys",
+        "v": 0,
+        "deployment": "https://cmdash.example",
+        "tenantRef": "tr_73513a69a549ad23b7a9075e962f8e1e",
+        "generatedAt": "2026-10-12T00:00:00.000Z",
+        "keys": [
+          {
+            "kid": "cmdash-proof-6b1e79a70e777676",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEA5e-49s4AgO5sNiPLdEcCmPf5zLi_YzgegW2YxY0u4ww",
+            "status": "ACTIVE",
+            "validFrom": "2026-09-01T00:00:00.000Z"
+          },
+          {
+            "kid": "cmdash-proof-49cc0a17962bf560",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAtdR3vb8HWTIQo1mK4D_AEZxCTcK9YTVtKW98V3gMQNU",
+            "status": "RETIRED",
+            "validFrom": "2026-06-01T00:00:00.000Z",
+            "validUntil": "2026-09-01T00:00:00.000Z",
+            "lastTreeSize": 6
+          },
+          {
+            "kid": "cmdash-proof-93b3543cd9195d0a",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAMmkfkHGC2bicW-7GnHYbV9PE7oCkBos3KPB2ZlvdGXE",
+            "status": "REVOKED",
+            "validFrom": "2026-03-01T00:00:00.000Z",
+            "validUntil": "2026-06-01T00:00:00.000Z",
+            "revokedAt": "2026-09-15T00:00:00.000Z",
+            "revocationReason": "KEY_COMPROMISE"
+          },
+          {
+            "kid": "cmdash-proof-6f46ab5f22c8732d",
+            "alg": "Ed25519",
+            "publicKey": "MCowBQYDK2VwAyEAOBX4MjLWRNNan3MkMhovXprFDh0ZS1_yDoOMn-1wrQo",
+            "status": "REVOKED",
+            "validFrom": "2026-01-01T00:00:00.000Z",
+            "revokedAt": "2026-03-01T00:00:00.000Z",
+            "revocationReason": "ISSUER_REQUEST",
+            "lastTreeSize": 2
+          }
+        ],
+        "log": {
+          "format": "cmdash-proof-log-keys",
+          "v": 0,
+          "generatedAt": "2026-10-12T00:00:00.000Z",
+          "origin": "cmdash.example/cmdash-proof-log",
+          "keys": [
+            {
+              "kid": "cmdash-proof-log-aba8e87dc4aed5e8",
+              "alg": "Ed25519",
+              "publicKey": "MCowBQYDK2VwAyEAr7oBOjWCkgkuFF08g3JEM_1wKb1WxP0LD4EBQMDF_-k",
+              "status": "ACTIVE",
+              "validFrom": "2026-09-01T00:00:00.000Z"
+            }
+          ]
+        }
+      },
+      "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json"
+    }
+  },
+  "expect": {
+    "verdict": "VALID",
+    "failedCheck": null,
+    "rule": null,
+    "summaryPrefix": "VALID",
+    "keySource": "KEY_DOCUMENT",
+    "keyStatusAsOf": "2026-10-12T00:00:00.000Z",
+    "keyDocumentUrl": "https://cmdash.example/api/.well-known/cmdash-proof-keys/tr_73513a69a549ad23b7a9075e962f8e1e.json",
+    "plainHttp": false,
+    "checks": [
+      {
+        "name": "envelope.json",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.version",
+        "outcome": "PASS"
+      },
+      {
+        "name": "envelope.shape",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.decode",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.canonical",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.schema",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.kid",
+        "outcome": "PASS"
+      },
+      {
+        "name": "issuer.key",
+        "outcome": "PASS"
+      },
+      {
+        "name": "signature.verify",
+        "outcome": "PASS"
+      },
+      {
+        "name": "log.inclusion",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.checkpoint",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "log.external",
+        "outcome": "SKIP"
+      },
+      {
+        "name": "issuer.key-status",
+        "outcome": "PASS"
+      },
+      {
+        "name": "payload.consistency",
+        "outcome": "PASS"
+      },
+      {
+        "name": "assertion.admissible",
+        "outcome": "PASS"
+      },
+      {
+        "name": "time.future",
+        "outcome": "PASS"
+      },
+      {
+        "name": "freshness",
+        "outcome": "PASS"
+      }
+    ],
+    "proves": [
+      "signed-by-key",
+      "issuer-key-published",
+      "unaltered",
+      "observed-at",
+      "measurement-stated",
+      "fresh"
+    ],
+    "doesNotProve": [
+      "source-truth",
+      "scope-completeness",
+      "control-effectiveness",
+      "not-superseded",
+      "not-logged"
+    ],
+    "reading": {
+      "kind": "RATIO",
+      "basis": "MEASURED",
+      "unit": "event",
+      "numerator": 999999998,
+      "denominator": 1000000000,
+      "unknown": 1,
+      "percent": "99.99"
+    },
+    "schema": "accept",
+    "digest": "161e426a8be43fc273d65aa39a4be30243130ef15b5481b98b813c585bdd5518"
+  },
+  "payloadText": "{\"claim\":{\"assertion\":{\"kind\":\"RATIO\"},\"claimId\":\"siem.endpoint-events-forwarded\",\"controls\":[{\"controlId\":\"AU.L2-3.3.1\",\"framework\":\"cmmc-l2\"}],\"statement\":\"Endpoint events forwarded to the SIEM in the last 24 hours.\"},\"evidence\":{\"algo\":\"sha256-salted\",\"commitment\":\"e17a1afa6a2ee3ddf5b1d454e883c3071b4e9c9881ac3d05d7698d7da4072ab7\"},\"freshUntil\":\"2026-10-31T11:30:00.000Z\",\"issuedAt\":\"2026-10-01T12:00:00.000Z\",\"issuer\":{\"deployment\":\"https://cmdash.example\",\"keyId\":\"cmdash-proof-6b1e79a70e777676\",\"tenantRef\":\"tr_73513a69a549ad23b7a9075e962f8e1e\"},\"measurement\":{\"denominator\":1000000000,\"method\":{\"id\":\"siem.forwarding\",\"version\":3},\"numerator\":999999998,\"scope\":{\"description\":\"Endpoint telemetry events in the window\",\"unit\":\"event\"},\"unknown\":1},\"observedAt\":\"2026-10-01T11:30:00.000Z\",\"receiptId\":\"01M3VNBWG017F5Z6WZC6AP3RAG\",\"sources\":[{\"kind\":\"INTEGRATION\",\"ref\":\"okta\"}]}"
+}
